@@ -79,7 +79,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# What is Social Network Analysis (SNA)?
+# Social Network Analysis (SNA) Origins?
 
 <img src="./images/karate-club.png" alt="Zachary's Karate Club Network" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
@@ -98,9 +98,10 @@ Zachary, W. W. (1977). "An Information Flow Model for Conflict and Fission in Sm
 transition: fade-out
 ---
 
-# What is Social Network Analysis (SNA)?
+# Social Network Analysis (SNA) Post Web 2.0?
 
 <img src="./images/pew-center-american-politics.png" alt="Pew Center American Politics" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<br>
 
 [Mapping Twitter Topic Networks: From Polarized Crowds to Community Clusters](https://www.pewresearch.org/internet/2014/02/20/mapping-twitter-topic-networks-from-polarized-crowds-to-community-clusters/)
 
@@ -116,19 +117,183 @@ transition: fade-out
 ---
 
 # What can we learn with SNA in a work context?
+
+ ### (if we trust the data)
+ <br>
+
+- Group dyamics that are not visible in the organizational chart.
+- Interpersonal Connections that are not broadcasted.
+- Influencers (people front and center) and Connectors (people doing glue work)
+
+<br>
+
 <div v-click>
 
- (if we trust the data)
-<br>
+```mermaid 
+flowchart TD
+    CEO["CEO"]
+
+    CTO["CTO"]
+    CFO["CFO"]
+    COO["COO"]
+    CPO["CPO"]
+
+    EngDir["Engineering Director"]
+    ITMgr["IT Manager"]
+    FinanceMgr["Finance Manager"]
+    AccountingMgr["Accounting Manager"]
+    OpsMgr["Operations Manager"]
+    HRMgr["HR Manager"]
+    ProductMgr["Product Manager"]
+    DesignMgr["Design Manager"]
+
+    Eng1["Backend Lead"]
+    Eng2["Frontend Lead"]
+    IT1["SysAdmin"]
+    Fin1["Financial Analyst"]
+    Ops1["Logistics Lead"]
+    Prod1["Product Analyst"]
+    Des1["UX Designer"]
+
+    CEO --> CTO
+    CEO --> CFO
+    CEO --> COO
+    CEO --> CPO
+
+    CTO --> EngDir
+    CTO --> ITMgr
+
+    CFO --> FinanceMgr
+    CFO --> AccountingMgr
+
+    COO --> OpsMgr
+    COO --> HRMgr
+
+    CPO --> ProductMgr
+    CPO --> DesignMgr
+
+    EngDir --> Eng1
+    EngDir --> Eng2
+    ITMgr --> IT1
+    FinanceMgr --> Fin1
+    OpsMgr --> Ops1
+    ProductMgr --> Prod1
+    DesignMgr --> Des1
+```
+
 </div>
 
 
-<div v-click>
+<!--
 
 - Group dyamics that are not visible in the organizational chart.
 - Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
-- Influencers and Connectors - people who are the center and those that connect different groups together.<br>
-</div>
+- Influencers and Connectors - people who are the center and those that connect different groups together.
+
+-->
+
+
+---
+transition: fade-out
+---
+
+# What can we learn with SNA in a work context?
+
+ ### (if we trust the data)
+ <br>
+
+- Group dyamics that are not visible in the organizational chart.
+- Interpersonal Connections that are not broadcasted.
+- Influencers (people front and center) and Connectors (people doing glue work)
+
+<br>
+
+```mermaid
+graph TD
+    CEO["CEO"]
+    CTO["CTO"]
+    CFO["CFO"]
+    COO["COO"]
+    CPO["CPO"]
+
+    EngDir["Engineering Director"]
+    ITMgr["IT Manager"]
+    FinanceMgr["Finance Manager"]
+    AccountingMgr["Accounting Manager"]
+    OpsMgr["Operations Manager"]
+    HRMgr["HR Manager"]
+    ProductMgr["Product Manager"]
+    DesignMgr["Design Manager"]
+
+    Eng1["Backend Lead"]
+    Eng2["Frontend Lead"]
+    IT1["SysAdmin"]
+    Fin1["Financial Analyst"]
+    Ops1["Logistics Lead"]
+    Prod1["Product Analyst"]
+    Des1["UX Designer"]
+
+    %% Main hub
+    CEO --- CTO
+    CEO --- CFO
+    CEO --- COO
+    CEO --- CPO
+    CEO --- EngDir
+    CEO --- ProductMgr
+    CEO --- OpsMgr
+    CEO --- FinanceMgr
+    CEO --- HRMgr
+
+    %% Secondary hubs
+    CTO --- EngDir
+    CTO --- ITMgr
+    CTO --- Eng1
+    CTO --- Eng2
+    CTO --- ProductMgr
+    CTO --- DesignMgr
+
+    COO --- OpsMgr
+    COO --- HRMgr
+    COO --- ITMgr
+    COO --- ProductMgr
+
+    CPO --- ProductMgr
+    CPO --- DesignMgr
+    CPO --- Prod1
+
+    CFO --- FinanceMgr
+    CFO --- AccountingMgr
+    CFO --- Fin1
+
+    %% Mid-tier nodes
+    EngDir --- Eng1
+    EngDir --- Eng2
+    EngDir --- ProductMgr
+
+    ProductMgr --- Prod1
+    ProductMgr --- DesignMgr
+    ProductMgr --- Des1
+
+    ITMgr --- IT1
+    OpsMgr --- Ops1
+    FinanceMgr --- Fin1
+    DesignMgr --- Des1
+
+    %% A few extra sparse cross-links
+    Eng1 --- Prod1
+    Eng2 --- Des1
+    AccountingMgr --- FinanceMgr
+```
+
+
+<!--
+
+- Group dyamics that are not visible in the organizational chart.
+- Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
+- Influencers and Connectors - people who are the center and those that connect different groups together.
+
+-->
+
 
 
 ---
@@ -154,9 +319,10 @@ transition: fade-out
 - Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2023. 
 - Took bi-weekly measurments of the number of nodes, connectivity, and density of the network.
 - Always open with the project with my team  - shared (network + group metrics graphs)
+
 <br>
 
-<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 
 ---
@@ -165,7 +331,7 @@ transition: fade-out
 
 # Analysis
 
-- Start with manager context, 1-1s, weekly updates, Slack conversations, Notable Ships, or PRs
+- Start with manager context, 1-1s, weekly updates, Slack conversations, Issues and PRs
 - Use information to contextualize the network data
 
 <br>
@@ -183,9 +349,11 @@ transition: fade-out
 
 # Learnings 
 
-- Team On/Offboardings
-- The Seniority Bottleneck
-- Manager Bottlenecks
+<br>
+
+## - Team On/Offboardings
+## - The Seniority Bottleneck
+## - Manager Bottlenecks
 
 
 ---
