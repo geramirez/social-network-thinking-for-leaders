@@ -20,7 +20,6 @@ duration: 20min
 
 # Social Network Analysis for Engineering Leaders
 
-<!--  -->
 
 ---
 transition: fade-out
@@ -44,7 +43,7 @@ transition: fade-out
 <br>
 <div v-click>
 
-### - First-time manager - Senior Software Engineer Manager at GitHub since 2023
+### - First-time manager: Senior Engineering Manager at GitHub since 2023
 ### - Software Engineer Individual Contributor for 10 years. 
 
 </div>
@@ -67,7 +66,12 @@ transition: fade-out
 
 </div>
 
-<!-- As a new manager, I used computational social science methods to help me grow into my new role. I'm sharing these insights from my point of view a new leader who still have close connections to being an individual contributor.
+<!-- 
+
+1. As a new manager, I used computational social science methods to help me grow into my new role. 
+
+2. I'm a first-time manager so my connection to being an IC is present. Many of these insights are still applicable to emerging leaders either in the IC or EM track. 
+
  -->
 
  
@@ -75,54 +79,109 @@ transition: fade-out
 transition: fade-out
 ---
 
-# What is Social Network Analysis?
+# What is Social Network Analysis (SNA)?
 
-- It's a method of analyzing social structures through the use of networks and graph theory. 
-- In the past it was very difficult and time consuming because of computational limitations. 
-- One of the first real world studies was "Zachary's Karate Club" (1977) where the social network of a karate club was analyzed to predict a split in the club.
+<img src="./images/karate-club.png" alt="Zachary's Karate Club Network" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 
-![Zachary's Karate Club Network](./images/karate-club.png)
+Zachary, W. W. (1977). "An Information Flow Model for Conflict and Fission in Small Groups". Journal of Anthropological Research. 33 (4): 452–473. doi:10.1086/jar.33.4.3629752.
+
+<!--
+- Method of analyzing social structures through the use of networks and graph theory.
+- Was be difficult and time consuming because of computational limitations.
+- The Image: One of the first real world studies was "Zachary's Karate Club" (1977) where the social network of a karate club was analyzed to predict a split in the club.
+-->
+
 
 
 ---
 transition: fade-out
 ---
 
-# What is Social Network Analysis?
+# What is Social Network Analysis (SNA)?
 
+<img src="./images/pew-center-american-politics.png" alt="Pew Center American Politics" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+[Mapping Twitter Topic Networks: From Polarized Crowds to Community Clusters](https://www.pewresearch.org/internet/2014/02/20/mapping-twitter-topic-networks-from-polarized-crowds-to-community-clusters/)
+
+<!--
 - With the rise of Web 2.0 and Social Networks - Myspace, Facebook, Twitter and API Acccess - Social Network Analysis became more accessible and widely used in various fields.
 - There is a large body of research on Social Network Analysis and Twitter. 
-- This is around the time I got started. In 2009 there were extensive protests against Ahmadinejad. US Media dubbed the protests "Twitter Revolution" and many felt they were engaged with Iranians on the ground through Twitter. 
-- In reality, Twitter was not widely used in the protests and Social Network Analysis demonsrate that. 
+- The image is from a Pew Research Center study that analyzed Twitter topic networks in American politics. As is typical in political discussions, the network is highly polarized with two large clusters representing different political ideologies.
+-->
+
 
 ---
 transition: fade-out
 ---
 
-# What can Social Network Analysis Show Us?
+# What can we learn with SNA in a work context?
+<div v-click>
 
-(if we trust the data)
+ (if we trust the data)
+<br>
+</div>
+
+
+<div v-click>
+
 - Group dyamics that are not visible in the organizational chart.
 - Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
-- Influencers and Connectors - people who are the center and those that connect different groups together.
+- Influencers and Connectors - people who are the center and those that connect different groups together.<br>
+</div>
+
+
+---
+theme: default
+drawings:
+  persist: false
+transition: slide-left
+comark: true
+class: text-center
+---
+
+# Applying SNA to my work as a manager
+
+<img src="./images/pepe-silva.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 
 ---
 transition: fade-out
 ---
 
-# How did I apply Social Network Analysis to my work as a manager?
+# Data Collection
 
-- Started collecting data using a script similar to gh-graph-explorer in January 2023. 
-- 
+- Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2023. 
+- Took bi-weekly measurments of the number of nodes, connectivity, and density of the network.
+- Always open with the project with my team  - shared (network + group metrics graphs)
+<br>
+
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
 
 ---
 transition: fade-out
 ---
 
-# How did I apply Social Network Analysis to my work as a manager?
+# Analysis
 
+- Start with manager context, 1-1s, weekly updates, Slack conversations, Notable Ships, or PRs
+- Use information to contextualize the network data
+
+<br>
+
+<img src="./images/notifications-team-network-graph.png" alt="Notifications Team Network Graph" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+<!-- 
+Without context, interpreations are worthless. SNA is not a shortcut to understanding your team, it's an enhancement. 
+-->
+
+
+---
+transition: fade-out
+---
+
+# Learnings 
 
 - Team On/Offboardings
 - The Seniority Bottleneck
@@ -135,11 +194,12 @@ transition: fade-out
 
 # Team On/Offboardings Problem
 
+<img src="./images/network-graph-for-my-people-onboarding.png" alt="Image showing my team's network stats" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+<!--
 - it’s well documented that adding or removing people from a team affects team velocity.
 - From the network perspective, something similar happens, the social network can also become more fragmented. 
-- As leaders, we can help with building onboarding programs that create a diverse set of links between people. 
-
-< graph of network going down> 
+-->
 
 ---
 transition: fade-out
@@ -148,7 +208,9 @@ transition: fade-out
 # Team On/Offboardings Solution
 
 - As leaders, we can help with building onboarding programs that create a diverse set of links between people.
-
+- Create a buddy system this help incorporate the people into the network 
+- Onboarding guide that directly asks people to build connections 1-1s with everyone on the team
+- Allow for relationship building rather than just pushing people into a silo
 
 ---
 transition: fade-out
@@ -216,3 +278,5 @@ transition: fade-out
 # Performance Metrics?
 
 If anything it's a performance metrics for us as leaders. Are we being good team custodians?
+
+
