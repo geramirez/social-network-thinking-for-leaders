@@ -314,9 +314,80 @@ class: text-center
 transition: fade-out
 ---
 
-# Data Collection
+# Data Collection and Processing
 
 - Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2023. 
+- Stored data in an csv edge list (usernames -- interaction -> GitHub)
+- Removed data points considered "fake collaboration" like weekly standup reports.
+- At first clean up bots... but then decided to leave them. 
+
+<br>
+<img src="./images/edge-list.png" alt="example edge list" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+---
+transition: fade-out
+---
+
+# Building The Network
+
+## Bipartite Network
+
+```mermaid
+graph LR
+    %% Users as circles
+    U1(GitHub User A)
+    U2(GitHub User B)
+    U3(GitHub User C)
+
+    %% PRs as rectangles
+    PR1[Pull Request 1]
+    PR2[Pull Request 2]
+
+    %% Relationships
+    U1 -- "pr created" --> PR1
+    U2 -- "pr commented" --> PR1
+    U3 -- "pr approved" --> PR1
+    U3 -- "pr created" --> PR2
+```
+
+
+---
+transition: fade-out
+---
+
+# Building The Network
+
+## Collpased Bipartite Network
+
+<br> 
+```mermaid
+graph LR
+    U1(GitHub User A)
+    U2(GitHub User B)
+    U3(GitHub User C)
+
+    U1 ---|shared PR: Pull Request 1| U2
+    U1 ---|shared PR: Pull Request 1| U3
+    U2 ---|shared PR: Pull Request 1| U3
+```
+
+
+---
+transition: fade-out
+---
+
+# Visualizing The Network
+
+- Tools like [Gephi](https://gephi.org/), [vis-network](https://github.com/visjs/vis-network), [Cosmograph](https://cosmograph.app/), and [Neo4J](https://neo4j.com/)
+
+<img src="./images/notifications-team-graph.png" alt="1.5 years of GitHub Notifications Team" style="width: 38em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+
+---
+transition: fade-out
+---
+# Network Analysis
 - Took bi-weekly measurments of the number of nodes, connectivity, and density of the network.
 - Always open with the project with my team  - shared (network + group metrics graphs)
 
@@ -325,11 +396,12 @@ transition: fade-out
 <img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 
+
 ---
 transition: fade-out
 ---
 
-# Analysis
+# __Social__ Network Analysis
 
 - Start with manager context, 1-1s, weekly updates, Slack conversations, Issues and PRs
 - Use information to contextualize the network data
@@ -347,72 +419,123 @@ Without context, interpreations are worthless. SNA is not a shortcut to understa
 transition: fade-out
 ---
 
-# Learnings 
+# Learning Areas
 
 <br>
 
-## - Team On/Offboardings
-## - The Seniority Bottleneck
-## - Manager Bottlenecks
+# - Team On and Offboardings
+# - Cliques and Silos
+# - The Seniority Bottleneck
+# - Manager Bottlenecks
 
 
 ---
 transition: fade-out
 ---
 
-# Team On/Offboardings Problem
+# Team On and Offboardings
 
 <img src="./images/network-graph-for-my-people-onboarding.png" alt="Image showing my team's network stats" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 <!--
 - it’s well documented that adding or removing people from a team affects team velocity.
-- From the network perspective, something similar happens, the social network can also become more fragmented. 
+- From the network perspective, something similar happens, the social network can also become more fragmented.
+- I didn't start collecting on these people until 2-3 weeks after they joined
 -->
 
 ---
 transition: fade-out
 ---
 
-# Team On/Offboardings Solution
+# Team On and Offboardings Mitigations
 
-- As leaders, we can help with building onboarding programs that create a diverse set of links between people.
 - Create a buddy system this help incorporate the people into the network 
-- Onboarding guide that directly asks people to build connections 1-1s with everyone on the team
+- Build onboarding guide that directly asks people to build connections 1-1s with everyone on the team
 - Allow for relationship building rather than just pushing people into a silo
+
 
 ---
 transition: fade-out
 ---
 
-# The Seniority Bottleneck Problem
+# Cliques and Silos
+
+<br>
+<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+---
+transition: fade-out
+---
+
+# Cliques and Silos Mitigations
+
+- Specialization vs Generalization - Deep work vs Cross-team work
+- When It's Positive - Encourage it let it be. Allow deep connections and work.
+- When It's Determental - Rotations, cross-team projects, mob sessions
+
+
+
+---
+transition: fade-out
+---
+
+# The Seniority Bottleneck
+
+<br>
+<img src="./images/central-senior.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+<!--
 - senior engineers have richer networks: they have been at the organization, find it easier to reach out to others, or have more confidence when reviewing PR
 - Their strong social ties are an asset, but they can also make it difficult for more junior engineers to meaningfully participate.
 - Over the last two years, I tried a number of social experiments to nudge engineers closer together.
+-->
 
-
----
-transition: fade-out
----
-
-# The Seniority Bottleneck Solution
-- Creating Junior-only Task Forces: allows juniors to build confidence, practice leadership and communication in a safer environment and a smaller scale. 
-- Temporarily splitting up dynamic duos: allows more of the team to benefit from their shared connections
-- Setting up Mob programming sessions: an easier way to generate group conversations and communication especially when you have an engaging facilitator 
 
 
 ---
 transition: fade-out
 ---
 
-# Manager Bottlenecks Problem
-- I found that sometimes the bottleneck was me. I was too central in the network and decision-making process 
+# The Seniority Bottleneck Mitigations
+
+- Mob Sessions
+- Creating Junior-only Task Forces
+
+<br>
+<img src="./images/seniors-and-juniors.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+
+<!--
+ allows juniors to build confidence, practice leadership and communication in a safer environment and a smaller scale. 
+- Setting up Mob programming sessions: an easier way to generate group conversations and communication especially when you have an engaging facilitator
+-->
 
 
 ---
 transition: fade-out
 ---
 
-# Manager Bottlenecks Solution
+# Manager Bottlenecks
+
+
+
+<img src="./images/network-graph-for-my-manager.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+<!--
+- sometimes the bottleneck can be a manager. 
+- it's complicated because managers tend tob
+-->
+
+
+---
+transition: fade-out
+---
+
+# Manager Bottlenecks Mitigations
 - found that the best course of action was to pull back and give my reports more agency. 
 
 
@@ -421,9 +544,16 @@ transition: fade-out
 ---
 
 # Performance Metrics? 
+<br>
+<img src="./images/imposter.png" alt="imposter xkcd" style="width: 34em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
+XKCD. (2013). "Impostor". XKCD. https://xkcd.com/149/
+
+<!--
 - With these insights, it can be tempting to turn social network analysis into a performance metric
 - especially when we can easily use computational methods to calculate things like how central a person is to the network
+-->
+
 
 ---
 transition: fade-out
@@ -431,20 +561,89 @@ transition: fade-out
 
 # Performance Metrics?
 
-## NO
+<v-clicks>
 
+# NO
+
+<br>
+
+
+### Reasons for High Connectedness
+- Leader
+- Glue work
+- Low value work
+
+<br>
+
+### Low Connection and Isolation Reasons
+- Vacation
+- Deep Work and Research 
+- Personal Issues 
+
+</v-clicks>
+
+
+<!-- 
 Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
 
 1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
 2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
-3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations 
+3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
+-->
+ 
 
 ---
 transition: fade-out
 ---
 
-# Performance Metrics?
+# Performance Metrics or Leadership Report Cards?
 
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+<!--
 If anything it's a performance metrics for us as leaders. Are we being good team custodians?
+-->
 
 
+---
+transition: fade-out
+---
+
+# How to get Started with SNA?
+
+[geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer?tab=readme-ov-file#installation)
+
+<img src="./images/gh-graph-explorer.png" alt="QR Code for https://github.com/geramirez/gh-graph-explorer" style="width: 350px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+
+---
+transition: fade-out
+---
+
+# How to get Started with SNA?
+
+## [Obsidan Graph View](https://obsidian.md/help/plugins/graph)
+
+Using links you can map out connections during 1-1s, team meetings, or retrospectives.
+
+<img src="./images/graph-view.png" alt="Obsidian graph-view plugin" style="width: 350px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+
+
+---
+transition: fade-out
+---
+
+# How to get Started with SNA?
+
+## Awareness
+- Building an intuitive sense of the social networks around you. 
+- Organization chart vs How Stuff Gets Done
+
+---
+transition: fade-out
+---
+
+# Thank you!
