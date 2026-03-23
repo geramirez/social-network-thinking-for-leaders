@@ -359,7 +359,8 @@ transition: fade-out
 
 ## Collpased Bipartite Network
 
-<br> 
+<br>
+
 ```mermaid
 graph LR
     U1(GitHub User A)
