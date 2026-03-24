@@ -38,6 +38,39 @@ class: text-center
 transition: fade-out
 ---
 
+# The Baby Manager
+
+<br>
+
+<img src="./images/babyboss.png" alt="baby boss" style="width: 450px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+<!--
+- Became a first time manager in 2023 after 10 years as an individual contributor.
+- Excited and nervous, spent time reading about managment, taking the offical GitHub manager training, and talking to other managers.
+- Still felt like I was missing something. Experinced managered talked about:
+  - these people work well together
+  - this team know about this and other about that
+  - the idea of the shadow org, how to get shit actually done
+- I turned to what I knew - computational social sciences
+-->
+
+
+---
+transition: fade-out
+---
+# Enter: Computational Social Sciences
+
+<br>
+
+<img src="./images/snabook.png" alt="Social Network Analysis book" style="width: 300px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+---
+transition: fade-out
+---
+
+
 # Who am I and why Social Network Analysis?
 <br>
 <br>
@@ -66,13 +99,6 @@ transition: fade-out
 
 </div>
 
-<!-- 
-
-1. As a new manager, I used computational social science methods to help me grow into my new role. 
-
-2. I'm a first-time manager so my connection to being an IC is present. Many of these insights are still applicable to emerging leaders either in the IC or EM track. 
-
- -->
 
  
 ---
@@ -87,6 +113,7 @@ transition: fade-out
 Zachary, W. W. (1977). "An Information Flow Model for Conflict and Fission in Small Groups". Journal of Anthropological Research. 33 (4): 452–473. doi:10.1086/jar.33.4.3629752.
 
 <!--
+- can be traced to the 1930s (sociometry)
 - Method of analyzing social structures through the use of networks and graph theory.
 - Was be difficult and time consuming because of computational limitations.
 - The Image: One of the first real world studies was "Zachary's Karate Club" (1977) where the social network of a karate club was analyzed to predict a split in the club.
@@ -317,7 +344,7 @@ transition: fade-out
 # Data Collection and Processing
 
 - Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2023. 
-- Stored data in an csv edge list (usernames -- interaction -> GitHub)
+- Stored data in an csv edge list (usernames -- interaction -- GitHub Resource)
 - Removed data points considered "fake collaboration" like weekly standup reports.
 - At first clean up bots... but then decided to leave them. 
 
