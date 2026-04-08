@@ -46,11 +46,11 @@ transition: fade-out
 
 
 <!--
-- Became a first time manager in 2023 after 10 years as an individual contributor.
+- Became a first time manager in 2024
 - Excited and nervous, spent time reading about managment, taking the offical GitHub manager training, and talking to other managers.
-- Still felt like I was missing something. Experinced managered talked about:
-  - these people work well together
-  - this team know about this and other about that
+- Still felt like I was missing something. Experinced managered knew:
+  - who worked well together
+  - which teams were close to other teams
   - the idea of the shadow org, how to get shit actually done
 - I turned to what I knew - computational social sciences
 -->
@@ -76,7 +76,7 @@ transition: fade-out
 <br>
 <div v-click>
 
-### - First-time manager: Senior Engineering Manager at GitHub since 2023
+### - First-time manager: Senior Engineering Manager at GitHub since 2024
 ### - Software Engineer Individual Contributor for 10 years. 
 
 </div>
@@ -343,7 +343,7 @@ transition: fade-out
 
 # Data Collection and Processing
 
-- Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2023. 
+- Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2024. 
 - Stored data in an csv edge list (usernames -- interaction -- GitHub Resource)
 - Removed data points considered "fake collaboration" like weekly standup reports.
 - At first clean up bots... but then decided to leave them. 
@@ -394,9 +394,10 @@ graph LR
     U2(GitHub User B)
     U3(GitHub User C)
 
-    U1 ---|shared PR: Pull Request 1| U2
-    U1 ---|shared PR: Pull Request 1| U3
-    U2 ---|shared PR: Pull Request 1| U3
+    U1 ---|PR: Pull Request 1| U2
+    U1 ---|PR: Pull Request 1| U3
+    U2 ---|PR: Pull Request 1| U3
+
 ```
 
 
@@ -417,7 +418,7 @@ transition: fade-out
 ---
 # Network Analysis
 - Took bi-weekly measurments of the number of nodes, connectivity, and density of the network.
-- Always open with the project with my team  - shared (network + group metrics graphs)
+- Shared (network + group metrics graphs)
 
 <br>
 
@@ -426,6 +427,11 @@ transition: fade-out
 ---
 transition: fade-out
 ---
+<!--
+At it's best is a insights tool at worst it's a survailence tool. 
+
+Sharing helps people understand how you use the data
+-->
 
 # AI
 
@@ -477,10 +483,16 @@ transition: fade-out
 
 <br>
 
-# - Team On and Offboardings
-# - Cliques and Silos
-# - The Seniority Bottleneck
-# - Manager Bottlenecks
+## 1. Team On and Offboardings
+<br>
+
+## 2. Cliques and Silos
+<br>
+
+## 3. The Seniority Bottleneck
+<br>
+
+## 4. Manager Bottlenecks
 
 
 ---
@@ -503,10 +515,17 @@ transition: fade-out
 
 # Team On and Offboardings Mitigations
 
-- Create a buddy system this help incorporate the people into the network 
-- Build onboarding guide that directly asks people to build connections 1-1s with everyone on the team
-- Allow for relationship building rather than just pushing people into a silo
+- Buddy system 
+- Onboarding Round Robins
+- Fun activities 
 
+<!--
+
+- Buddy system - help people find someone to talk to 
+- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
+-  Fun activities  - Allow for relationship building rather than just pushing people into a silo
+
+-->
 
 ---
 transition: fade-out
@@ -518,16 +537,34 @@ transition: fade-out
 <img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
 
+<!--
+- Cliques and silos are when a group of people form tight-knit subgroups. 
+- the Picture shows two of these silos
+--> 
+
 ---
 transition: fade-out
 ---
 
 # Cliques and Silos Mitigations
 
-- Specialization vs Generalization - Deep work vs Cross-team work
+
+- Are cliques and silos bad?
 - When It's Positive - Encourage it let it be. Allow deep connections and work.
 - When It's Determental - Rotations, cross-team projects, mob sessions
 
+
+<br>
+<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+
+
+<!--
+- These network proprties can be good or bad
+- Bad: only a few people have information 
+- Good: people are working very well together and sharing the load with a group of people
+- They can also demonsrate a period of Sepicalized work or lack of cliques can show a period of Generalized work
+- They can also be a sign of Deep work vs Cross-team work
+--> 
 
 
 ---
@@ -590,7 +627,17 @@ transition: fade-out
 ---
 
 # Manager Bottlenecks Mitigations
-- found that the best course of action was to pull back and give my reports more agency. 
+
+- Encourage Decisions 
+- Delegate Meeting Leadership 
+- Encourage Continuity 
+
+<!--
+- Delegate Decisions  - can be hard to let go of
+- Delegate meeting leadership - for example mob sessions or retros
+- Encourage Continuity - if I'm not there, continue the meeting isn't about the manager it's about the team.
+-->
+
 
 
 ---
