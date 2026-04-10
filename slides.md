@@ -423,7 +423,33 @@ transition: fade-out
 
 <img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
 
+---
+transition: fade-out
+---
 
+# AI
+
+- Neo4J
+- MCP server
+- Claude Desktop 
+
+---
+transition: fade-out
+---
+
+# Engineer Manager Claude
+
+- picture of my asking Claude to do x
+
+
+---
+transition: fade-out
+---
+
+# Pause
+
+- picture of a stop sign
+- just because we can, should we? 
 
 ---
 transition: fade-out
