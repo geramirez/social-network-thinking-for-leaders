@@ -26,14 +26,6 @@ transition: fade-out
 class: text-center
 ---
 
-# The Tooling
-
-[geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer?tab=readme-ov-file#installation)
-
-<img src="./images/gh-graph-explorer.png" alt="QR Code for https://github.com/geramirez/gh-graph-explorer" style="width: 350px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-<!-- This is the link the Socal Network Analysis tool that I used to collect data  -->
-
 ---
 transition: fade-out
 ---
@@ -435,9 +427,11 @@ Sharing helps people understand how you use the data
 
 # AI
 
-- Neo4J
-- MCP server
-- Claude Desktop 
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; align-items: center; gap: 4rem;">
+  <img src="./images/neo4j-logo.svg" alt="Neo4J logo" style="height: 100px; width: auto;" />
+  <img src="./images/mcp-logo.png" alt="Model Context Protocol (MCP) logo" style="max-width: 220px; max-height: 100px; width: auto; height: auto;" />
+  <img src="./images/claude-desktop-logo.svg" alt="Claude Desktop logo" style="height: 100px; width: auto;" />
+</div>
 
 ---
 transition: fade-out
@@ -445,7 +439,15 @@ transition: fade-out
 
 # Engineer Manager Claude
 
-- picture of my asking Claude to do x
+<img src="./images/claude-prompt.png" alt="Screenshot of a Claude prompt for engineering manager tasks" style="max-height: 75%; width: auto; display: block; margin: 0 auto;" />
+
+---
+transition: fade-out
+---
+
+# Engineer Manager Claude
+
+<img src="./images/claude-explorer.png" alt="Screenshot of asking Claude to explore team network data" style="width: 100%; max-height: 80%; object-fit: contain; display: block; margin: 0 auto;" />
 
 
 ---
@@ -454,8 +456,7 @@ transition: fade-out
 
 # Pause
 
-- picture of a stop sign
-- just because we can, should we? 
+<img src="./images/pause-symbol.svg" alt="Pause symbol" style="width: 200px; height: auto; display: block; margin: 2rem auto;" />
 
 ---
 transition: fade-out
