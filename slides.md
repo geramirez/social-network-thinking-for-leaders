@@ -23,53 +23,15 @@ duration: 20min
 
 ---
 transition: fade-out
-class: text-center
 ---
-
----
-transition: fade-out
----
-
-# The Baby Manager
-
-<br>
-
-<img src="./images/babyboss.png" alt="baby boss" style="width: 450px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-<!--
-- Became a first time manager in 2024
-- Excited and nervous, spent time reading about managment, taking the offical GitHub manager training, and talking to other managers.
-- Still felt like I was missing something. Experinced managered knew:
-  - who worked well together
-  - which teams were close to other teams
-  - the idea of the shadow org, how to get shit actually done
-- I turned to what I knew - computational social sciences
--->
-
-
----
-transition: fade-out
----
-# Enter: Computational Social Sciences
-
-<br>
-
-<img src="./images/snabook.png" alt="Social Network Analysis book" style="width: 300px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
----
-transition: fade-out
----
-
 
 # Who am I and why Social Network Analysis?
 <br>
 <br>
 <div v-click>
 
-### - First-time manager: Senior Engineering Manager at GitHub since 2024
-### - Software Engineer Individual Contributor for 10 years. 
+### - Became a Senior Engineering Manager at GitHub in 2024
+### - Software Engineer in various leadership roles for over a decade. 
 
 </div>
 
@@ -77,7 +39,7 @@ transition: fade-out
 <br>
 <br>
 
-## In a past life... 
+## Also...
 
 </div>
 
@@ -85,68 +47,41 @@ transition: fade-out
 <br>
 <br>
 
-### - Computational Social Scientist 
+### - Sociologist and Anthropologist 
 ### - Researched Social Networks in Social Media and Community Language Usage
 ### - Arabic Linguist (لسا بقدر احكي)
 
 </div>
 
 
- 
 ---
 transition: fade-out
 ---
 
-# Social Network Analysis (SNA) Origins?
+# What we'll cover
 
-<img src="./images/karate-club.png" alt="Zachary's Karate Club Network" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-Zachary, W. W. (1977). "An Information Flow Model for Conflict and Fission in Small Groups". Journal of Anthropological Research. 33 (4): 452–473. doi:10.1086/jar.33.4.3629752.
-
-<!--
-- can be traced to the 1930s (sociometry)
-- Method of analyzing social structures through the use of networks and graph theory.
-- Was be difficult and time consuming because of computational limitations.
-- The Image: One of the first real world studies was "Zachary's Karate Club" (1977) where the social network of a karate club was analyzed to predict a split in the club.
--->
-
-
+1. Using Social Network Analysis to understand teams and organizations
+2. Practical team management insights derived from Social Network Analysis
+3. Explore the limits of Social Network Analysis
 
 ---
 transition: fade-out
+layout: center
+class: text-center
 ---
 
-# Social Network Analysis (SNA) Post Web 2.0?
-
-<img src="./images/pew-center-american-politics.png" alt="Pew Center American Politics" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-<br>
-
-[Mapping Twitter Topic Networks: From Polarized Crowds to Community Clusters](https://www.pewresearch.org/internet/2014/02/20/mapping-twitter-topic-networks-from-polarized-crowds-to-community-clusters/)
-
-<!--
-- With the rise of Web 2.0 and Social Networks - Myspace, Facebook, Twitter and API Acccess - Social Network Analysis became more accessible and widely used in various fields.
-- There is a large body of research on Social Network Analysis and Twitter. 
-- The image is from a Pew Research Center study that analyzed Twitter topic networks in American politics. As is typical in political discussions, the network is highly polarized with two large clusters representing different political ideologies.
--->
+# Social Network Analysis for Understanding 
+# Teams and Organizations
 
 
 ---
 transition: fade-out
 ---
 
-# What can we learn with SNA in a work context?
-
- ### (if we trust the data)
- <br>
-
-- Group dyamics that are not visible in the organizational chart.
-- Interpersonal Connections that are not broadcasted.
-- Influencers (people front and center) and Connectors (people doing glue work)
+# Understanding Teams and Organizations
 
 <br>
 
-<div v-click>
 
 ```mermaid 
 flowchart TD
@@ -200,15 +135,12 @@ flowchart TD
     DesignMgr --> Des1
 ```
 
-</div>
-
 
 <!--
 
+- Influencers and Connectors - people who are the center and those that connect different groups together.
 - Group dyamics that are not visible in the organizational chart.
 - Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
-- Influencers and Connectors - people who are the center and those that connect different groups together.
-
 -->
 
 
@@ -217,13 +149,6 @@ transition: fade-out
 ---
 
 # What can we learn with SNA in a work context?
-
- ### (if we trust the data)
- <br>
-
-- Group dyamics that are not visible in the organizational chart.
-- Interpersonal Connections that are not broadcasted.
-- Influencers (people front and center) and Connectors (people doing glue work)
 
 <br>
 
@@ -305,13 +230,7 @@ graph TD
 ```
 
 
-<!--
 
-- Group dyamics that are not visible in the organizational chart.
-- Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
-- Influencers and Connectors - people who are the center and those that connect different groups together.
-
--->
 
 
 
@@ -324,9 +243,9 @@ comark: true
 class: text-center
 ---
 
-# Applying SNA to my work as a manager
+# How I applied Social Network Analysis
 
-<img src="./images/pepe-silva.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/pepe-silva.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
 
 ---
@@ -338,16 +257,18 @@ transition: fade-out
 - Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2024. 
 - Stored data in an csv edge list (usernames -- interaction -- GitHub Resource)
 - Removed data points considered "fake collaboration" like weekly standup reports.
-- At first clean up bots... but then decided to leave them. 
+- At first clean up bots... but then decided to leave them. (hubot, dependabot, slack integrations, etc)
 
 <br>
-<img src="./images/edge-list.png" alt="example edge list" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/edge-list.png" alt="example edge list" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
 
 ---
 transition: fade-out
+class: text-center
 ---
 
 # Building The Network
+<br>
 
 ## Bipartite Network
 
@@ -372,11 +293,14 @@ graph LR
 
 ---
 transition: fade-out
+class: text-center
 ---
 
 # Building The Network
 
-## Collpased Bipartite Network
+<br>
+
+## Collapsed Bipartite Network
 
 <br>
 
@@ -401,7 +325,9 @@ transition: fade-out
 
 - Tools like [Gephi](https://gephi.org/), [vis-network](https://github.com/visjs/vis-network), [Cosmograph](https://cosmograph.app/), and [Neo4J](https://neo4j.com/)
 
-<img src="./images/notifications-team-graph.png" alt="1.5 years of GitHub Notifications Team" style="width: 38em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<br>
+
+<img src="./images/notifications-team-graph.png" alt="1.5 years of GitHub Notifications Team" style="width: 30em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
 
 
 
@@ -409,29 +335,188 @@ transition: fade-out
 transition: fade-out
 ---
 # Network Analysis
-- Took bi-weekly measurments of the number of nodes, connectivity, and density of the network.
-- Shared (network + group metrics graphs)
+- Took bi-weekly measurements of the number of nodes, connectivity, and density of the network.
 
 <br>
 
-<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
 
 ---
 transition: fade-out
 ---
-<!--
-At it's best is a insights tool at worst it's a survailence tool. 
 
-Sharing helps people understand how you use the data
+# Practical Team Management Insights
+
+<br>
+
+1. Team On and Offboardings
+2. Cliques and Silos
+3. The Seniority Bottleneck
+4. Manager Bottlenecks
+
+
+---
+transition: fade-out
+---
+
+# Team On and Offboardings
+
+<img src="./images/network-graph-for-my-people-onboarding.png" alt="Image showing my team's network stats" style="width: 35em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
+
+<!--
+- it’s well documented that adding or removing people from a team affects team velocity.
+- From the network perspective, something similar happens, the social network can also become more fragmented.
+- I didn't start collecting on these people until 2-3 weeks after they joined
 -->
 
-# AI
+---
+transition: fade-out
+---
+
+# Team On and Offboardings Mitigations
+
+- Buddy system 
+- Onboarding Round Robins
+- Question of the Day or Game Days
+
+<!--
+
+- Buddy system - help people find someone to talk to 
+- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
+-  Question of the Day or Game Days  - Allow for relationship building rather than just pushing people into a silo
+
+-->
+
+---
+transition: fade-out
+---
+
+# Cliques and Silos
+
+<br>
+<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 35em; max-width: 100%; max-height: 380px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+- Cliques and silos are when a group of people form tight-knit subgroups. 
+- the Picture shows two of these silos
+--> 
+
+---
+transition: fade-out
+---
+
+# Cliques and Silos Mitigations
+
+
+- Are cliques and silos bad?
+- When It's Positive - Encourage it let it be. Allow deep connections and work.
+- When It's Detrimental - Rotations, cross-team projects, mob sessions
+
+
+<br>
+<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+- These network proprties can be good or bad
+- Bad: only a few people have information 
+- Good: people are working very well together and sharing the load with a group of people
+- They can also demonsrate a period of Sepicalized work or lack of cliques can show a period of Generalized work
+- They can also be a sign of Deep work vs Cross-team work
+--> 
+
+
+---
+transition: fade-out
+---
+
+# The Seniority Bottleneck
+
+<br>
+<img src="./images/central-senior.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; max-height: 380px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+- senior engineers have richer networks: they have been at the organization, find it easier to reach out to others, or have more confidence when reviewing PR
+- Their strong social ties are an asset, but they can also make it difficult for more junior engineers to meaningfully participate.
+- Over the last two years, I tried a number of social experiments to nudge engineers closer together.
+-->
+
+
+
+---
+transition: fade-out
+---
+
+# The Seniority Bottleneck Mitigations
+
+- Mob Sessions
+- Creating Junior-only Task Forces
+
+<br>
+<img src="./images/seniors-and-juniors.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; max-height: 300px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+
+<!--
+ allows juniors to build confidence, practice leadership and communication in a safer environment and a smaller scale. 
+- Setting up Mob programming sessions: an easier way to generate group conversations and communication especially when you have an engaging facilitator
+-->
+
+
+---
+transition: fade-out
+---
+
+# Manager Bottlenecks
+
+
+<img src="./images/network-graph-for-my-manager.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+- sometimes the bottleneck can be a manager. 
+- it's complicated because managers tend tob
+-->
+
+
+---
+transition: fade-out
+---
+
+# Manager Bottlenecks Mitigations
+
+- Encourage Autonomous Decisions 
+- Delegate Meeting Leadership 
+- Encourage Continuity
+
+<!--
+- Encourage Autonomous Decisions   - can be hard to let go of
+- Delegate meeting leadership - for example mob sessions or retros
+- Encourage Continuity - if I'm not there, continue the meeting isn't about the manager it's about the team.
+-->
+
+---
+transition: fade-out
+---
+
+# Can we automate Social Network Analysis with AI?
 
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; align-items: center; gap: 4rem;">
   <img src="./images/neo4j-logo.svg" alt="Neo4J logo" style="height: 100px; width: auto;" />
   <img src="./images/mcp-logo.png" alt="Model Context Protocol (MCP) logo" style="max-width: 220px; max-height: 100px; width: auto; height: auto;" />
   <img src="./images/claude-desktop-logo.svg" alt="Claude Desktop logo" style="height: 100px; width: auto;" />
 </div>
+
+<!--
+Yes, we can use AI to automate the process of collecting, analyzing, and visualizing social network data.
+- Neo4J has a graph database that can be used to store and query social network data
+- Model Context Protocol (MCP) can be used to provide context to the AI 
+- Claude Desktop can be used to interact with the AI and get insights from the data
+-->
 
 ---
 transition: fade-out
@@ -440,6 +525,7 @@ transition: fade-out
 # Engineer Manager Claude
 
 <img src="./images/claude-prompt.png" alt="Screenshot of a Claude prompt for engineering manager tasks" style="max-height: 75%; width: auto; display: block; margin: 0 auto;" />
+
 
 ---
 transition: fade-out
@@ -462,183 +548,42 @@ transition: fade-out
 transition: fade-out
 ---
 
-# __Social__ Network Analysis
+# Thinking before leaping
 
-- Start with manager context, 1-1s, weekly updates, Slack conversations, Issues and PRs
-- Use information to contextualize the network data
+<!--
+- For anyone that has done softare engineering with AI, you know that building complexity is easier than ever. 
+- In the recent past when you had to manually code line by line, you had time to think about if the thing your building makes sense. 
+- The same applies in this case. Using AI to automate difficult managerial tasks is becoming easier.
+- But we should pause and think about the implications, ethics, and limits of what we are doing. 
+-->
+
+---
+transition: fade-out
+class: text-center
+layout: center
+---
+
+# Limits of Social Network Analysis
+
+---
+transition: fade-out
+---
+
+# The Network Needs a Manager
+
+Social Network Analysis clarifies a snapshot of interactions. It doesn't tell you why or what to do about it.
+
+- 1-1s: surface topics that can't be graphed
+- Retrospectives: help us decide what should happen
+- Coaching and Mentorship: requires interpersonal connection and trust
 
 <br>
 
-<img src="./images/notifications-team-network-graph.png" alt="Notifications Team Network Graph" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/notifications-team-network-graph.png" alt="Notifications Team Network Graph" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
 
 <!-- 
-Without context, interpreations are worthless. SNA is not a shortcut to understanding your team, it's an enhancement. 
+Without context, interpreations are worthless. SNA is not a shortcut to understanding your team. 
 -->
-
-
----
-transition: fade-out
----
-
-# Learning Areas
-
-<br>
-
-## 1. Team On and Offboardings
-<br>
-
-## 2. Cliques and Silos
-<br>
-
-## 3. The Seniority Bottleneck
-<br>
-
-## 4. Manager Bottlenecks
-
-
----
-transition: fade-out
----
-
-# Team On and Offboardings
-
-<img src="./images/network-graph-for-my-people-onboarding.png" alt="Image showing my team's network stats" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-<!--
-- it’s well documented that adding or removing people from a team affects team velocity.
-- From the network perspective, something similar happens, the social network can also become more fragmented.
-- I didn't start collecting on these people until 2-3 weeks after they joined
--->
-
----
-transition: fade-out
----
-
-# Team On and Offboardings Mitigations
-
-- Buddy system 
-- Onboarding Round Robins
-- Fun activities 
-
-<!--
-
-- Buddy system - help people find someone to talk to 
-- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
--  Fun activities  - Allow for relationship building rather than just pushing people into a silo
-
--->
-
----
-transition: fade-out
----
-
-# Cliques and Silos
-
-<br>
-<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 40em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-<!--
-- Cliques and silos are when a group of people form tight-knit subgroups. 
-- the Picture shows two of these silos
---> 
-
----
-transition: fade-out
----
-
-# Cliques and Silos Mitigations
-
-
-- Are cliques and silos bad?
-- When It's Positive - Encourage it let it be. Allow deep connections and work.
-- When It's Determental - Rotations, cross-team projects, mob sessions
-
-
-<br>
-<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-<!--
-- These network proprties can be good or bad
-- Bad: only a few people have information 
-- Good: people are working very well together and sharing the load with a group of people
-- They can also demonsrate a period of Sepicalized work or lack of cliques can show a period of Generalized work
-- They can also be a sign of Deep work vs Cross-team work
---> 
-
-
----
-transition: fade-out
----
-
-# The Seniority Bottleneck
-
-<br>
-<img src="./images/central-senior.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-<!--
-- senior engineers have richer networks: they have been at the organization, find it easier to reach out to others, or have more confidence when reviewing PR
-- Their strong social ties are an asset, but they can also make it difficult for more junior engineers to meaningfully participate.
-- Over the last two years, I tried a number of social experiments to nudge engineers closer together.
--->
-
-
-
----
-transition: fade-out
----
-
-# The Seniority Bottleneck Mitigations
-
-- Mob Sessions
-- Creating Junior-only Task Forces
-
-<br>
-<img src="./images/seniors-and-juniors.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-
-<!--
- allows juniors to build confidence, practice leadership and communication in a safer environment and a smaller scale. 
-- Setting up Mob programming sessions: an easier way to generate group conversations and communication especially when you have an engaging facilitator
--->
-
-
----
-transition: fade-out
----
-
-# Manager Bottlenecks
-
-
-
-<img src="./images/network-graph-for-my-manager.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
-
-
-<!--
-- sometimes the bottleneck can be a manager. 
-- it's complicated because managers tend tob
--->
-
-
----
-transition: fade-out
----
-
-# Manager Bottlenecks Mitigations
-
-- Encourage Decisions 
-- Delegate Meeting Leadership 
-- Encourage Continuity 
-
-<!--
-- Delegate Decisions  - can be hard to let go of
-- Delegate meeting leadership - for example mob sessions or retros
-- Encourage Continuity - if I'm not there, continue the meeting isn't about the manager it's about the team.
--->
-
 
 
 ---
@@ -647,7 +592,7 @@ transition: fade-out
 
 # Performance Metrics? 
 <br>
-<img src="./images/imposter.png" alt="imposter xkcd" style="width: 34em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/imposter.png" alt="imposter xkcd" style="width: 34em; max-width: 100%; max-height: 340px; object-fit: contain; display: block; margin: 0 auto;" />
 
 XKCD. (2013). "Impostor". XKCD. https://xkcd.com/149/
 
@@ -661,13 +606,7 @@ XKCD. (2013). "Impostor". XKCD. https://xkcd.com/149/
 transition: fade-out
 ---
 
-# Performance Metrics?
-
-<v-clicks>
-
-# NO
-
-<br>
+# Context Matters
 
 
 ### Reasons for High Connectedness
@@ -677,12 +616,10 @@ transition: fade-out
 
 <br>
 
-### Low Connection and Isolation Reasons
+### Low Connectedness and Isolation Reasons
 - Vacation
 - Deep Work and Research 
 - Personal Issues 
-
-</v-clicks>
 
 
 <!-- 
@@ -700,10 +637,44 @@ transition: fade-out
 
 # Performance Metrics or Leadership Report Cards?
 
-<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
 <!--
 If anything it's a performance metrics for us as leaders. Are we being good team custodians?
+-->
+
+---
+transition: fade-out
+layout: center
+class: text-center
+---
+
+# How to get Started with Social Network Analysis?
+
+---
+transition: fade-out
+---
+
+# [geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer?tab=readme-ov-file#installation)
+
+<br>
+<img src="./images/gh-graph-explorer.png" alt="QR Code for https://github.com/geramirez/gh-graph-explorer" style="width: 350px; max-width: 100%; max-height: 380px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+
+---
+transition: fade-out
+---
+
+# [Obsidian Graph View](https://obsidian.md/help/plugins/graph)
+
+Using links you can map out connections during 1-1s, team meetings, or retrospectives.
+
+<img src="./images/graph-view.png" alt="Obsidian graph-view plugin" style="width: 350px; max-width: 100%; max-height: 340px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+This is how early anthropologist used to collect data
 -->
 
 
@@ -711,38 +682,33 @@ If anything it's a performance metrics for us as leaders. Are we being good team
 transition: fade-out
 ---
 
-# How to get Started with SNA?
-
-[geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer?tab=readme-ov-file#installation)
-
-<img src="./images/gh-graph-explorer.png" alt="QR Code for https://github.com/geramirez/gh-graph-explorer" style="width: 350px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+# Observation and Listening
 
 
-
----
-transition: fade-out
----
-
-# How to get Started with SNA?
-
-## [Obsidan Graph View](https://obsidian.md/help/plugins/graph)
-
-Using links you can map out connections during 1-1s, team meetings, or retrospectives.
-
-<img src="./images/graph-view.png" alt="Obsidian graph-view plugin" style="width: 350px; max-width: 100%; height: auto; display: block; margin: 0 auto;" />
+- Who do people go to when they're stuck?
+- Who always seems to know what's happening across teams?
+- Who is the last person to learn about important decisions?
 
 
+<!--
 
+- Anthropologists mapped social structures by watching and listening 
+- Best leaders are aware of the social networks around them.
+- If you can answer these questions your well on your way. 
+- Hopefully this talk gives the framing to understand what's happening
+
+-->
 
 ---
 transition: fade-out
 ---
 
-# How to get Started with SNA?
+# What we covered
 
-## Awareness
-- Building an intuitive sense of the social networks around you. 
-- Organization chart vs How Stuff Gets Done
+1. Using Social Network Analysis to understand teams and organizations
+2. Practical team management insights derived from Social Network Analysis
+3. Explore the limits of Social Network Analysis
+
 
 ---
 transition: fade-out
