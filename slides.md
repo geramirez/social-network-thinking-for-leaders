@@ -25,44 +25,32 @@ duration: 20min
 transition: fade-out
 ---
 
-# Who am I and why Social Network Analysis?
-<br>
-<br>
-<div v-click>
+# About me?
 
-### - Became a Senior Engineering Manager at GitHub in 2024
-### - Software Engineer in various leadership roles for over a decade. 
+- Sociologist and Anthropologist turned software engineering
+- Started my career as computational social scientist
+- 15 years of experince in technology software engineering and engineering leadership
 
-</div>
 
-<div v-click>
-<br>
-<br>
+<!--
+- I was stuyding sociology and anthropology in graduate school and roommate was a Computer Science PhD 
+- One day I found him hunched over the computer wondering what his final project for his Network Analysis class. 
+- What should I do for my network analysis final project? - There are a bunch of revolutions social movments
+- brocast on twitter and I have do write my final paper too, let's work together?
 
-## Also...
-
-</div>
-
-<div v-click>
-<br>
-<br>
-
-### - Sociologist and Anthropologist 
-### - Researched Social Networks in Social Media and Community Language Usage
-### - Arabic Linguist (لسا بقدر احكي)
-
-</div>
-
+- this kicked of my intrests in tech, started as a computational social scienist and slowly transition to software engineering and engineering leadership.
+-->
 
 ---
 transition: fade-out
 ---
 
-# What we'll cover
+# Why Social Network Analysis as an Engineering Manager?
+- Understand my team from a different point of view
+- Identify opportunities for improvement in my management practice
+- Unspoken levers of of power and influence in an organization
 
-1. Using Social Network Analysis to understand teams and organizations
-2. Practical team management insights derived from Social Network Analysis
-3. Explore the limits of Social Network Analysis
+
 
 ---
 transition: fade-out
@@ -70,15 +58,33 @@ layout: center
 class: text-center
 ---
 
-# Social Network Analysis for Understanding 
-# Teams and Organizations
+# Social Network Analysis, what is it?
 
 
 ---
 transition: fade-out
 ---
 
-# Understanding Teams and Organizations
+# Social Network Analysis 101
+
+<br>
+
+- A research method for studying social structures through the use of networks and graph theory
+- 1930s - during development of mass survey techniques and quantitative psychology
+- Evolved alongside computing technology: from manual mapping to computational analysis
+
+
+<img src="./images/pew-center-american-politics.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+
+
+---
+transition: fade-out
+---
+
+# Applying Social Network Analysis to Organizations
+
 
 <br>
 
@@ -136,12 +142,6 @@ flowchart TD
 ```
 
 
-<!--
-
-- Influencers and Connectors - people who are the center and those that connect different groups together.
-- Group dyamics that are not visible in the organizational chart.
-- Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
--->
 
 
 ---
@@ -231,6 +231,11 @@ graph TD
 
 
 
+<!--
+- Influencers and Connectors - people who are the center and those that connect different groups together.
+- Group dyamics that are not visible in the organizational chart.
+- Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
+-->
 
 
 
@@ -254,23 +259,20 @@ transition: fade-out
 
 # Data Collection and Processing
 
-- Started collecting data using a script similar to [gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2024. 
+- Started collecting data using a script similar to [geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer) in January 2024. 
 - Stored data in an csv edge list (usernames -- interaction -- GitHub Resource)
-- Removed data points considered "fake collaboration" like weekly standup reports.
-- At first clean up bots... but then decided to leave them. (hubot, dependabot, slack integrations, etc)
 
 <br>
 <img src="./images/edge-list.png" alt="example edge list" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
 
 ---
 transition: fade-out
-class: text-center
 ---
 
-# Building The Network
+# What does the data look like?
 <br>
 
-## Bipartite Network
+## People to Resources (Bipartite Network)
 
 ```mermaid
 graph LR
@@ -293,14 +295,15 @@ graph LR
 
 ---
 transition: fade-out
-class: text-center
+
 ---
 
-# Building The Network
+# What does the data look like?
+
 
 <br>
 
-## Collapsed Bipartite Network
+## People to People (Unipartite Network)
 
 <br>
 
@@ -335,7 +338,8 @@ transition: fade-out
 transition: fade-out
 ---
 # Network Analysis
-- Took bi-weekly measurements of the number of nodes, connectivity, and density of the network.
+- Capture network every 2 weeks
+- Compute number of nodes, connectivity, and density of the network.
 
 <br>
 
@@ -362,6 +366,8 @@ transition: fade-out
 ---
 
 # Team On and Offboardings
+
+- Team velocity drop when people join teams, so does the team connectivity.
 
 <img src="./images/network-graph-for-my-people-onboarding.png" alt="Image showing my team's network stats" style="width: 35em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
@@ -503,7 +509,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Can we automate Social Network Analysis with AI?
+# Social Network Analysis with AI?
 
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; align-items: center; gap: 4rem;">
   <img src="./images/neo4j-logo.svg" alt="Neo4J logo" style="height: 100px; width: auto;" />
@@ -523,6 +529,7 @@ transition: fade-out
 ---
 
 # Engineer Manager Claude
+- anonymized org chart + MCP server
 
 <img src="./images/claude-prompt.png" alt="Screenshot of a Claude prompt for engineering manager tasks" style="max-height: 75%; width: auto; display: block; margin: 0 auto;" />
 
@@ -544,12 +551,6 @@ transition: fade-out
 
 <img src="./images/pause-symbol.svg" alt="Pause symbol" style="width: 200px; height: auto; display: block; margin: 2rem auto;" />
 
----
-transition: fade-out
----
-
-# Thinking before leaping
-
 <!--
 - For anyone that has done softare engineering with AI, you know that building complexity is easier than ever. 
 - In the recent past when you had to manually code line by line, you had time to think about if the thing your building makes sense. 
@@ -557,13 +558,103 @@ transition: fade-out
 - But we should pause and think about the implications, ethics, and limits of what we are doing. 
 -->
 
+
 ---
 transition: fade-out
-class: text-center
-layout: center
 ---
 
-# Limits of Social Network Analysis
+# Rewind
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style="width: 200px; height: auto; display: block; margin: 2rem auto;">
+  <polygon points="10,50 50,10 50,90" fill="#333"/>
+  <polygon points="50,50 90,10 90,90" fill="#333"/>
+</svg>
+
+<!--
+- In the 1930 when quantitive social research was really exciting; however,
+- by the end of the decade and into the 1940s, there were serious ethical concerns about quatitiative methods 
+
+Sociologist espeically those that had seen WWII, eugenics and genocide. 
+In the effort to understand society better through science and quantitive methods
+we created dangerous and biased ideas "backed by data"
+
+I think in some ways with the ease of which we can do social network analysis and query AI, we are back in that time again.
+
+-->
+
+---
+transition: fade-out
+---
+
+# Ethical Considerations
+
+- In Academia this would require Institutional Review Boards (also a product of post-WWII ethical concerns in research)
+- As a manager you have much more access to personal and senstive data about your team, and you have a lot of power over them... use it responsibly.
+
+<br>
+
+---
+transition: fade-out
+---
+
+# Personal Ethical Principles
+
+- **Transparency**
+  - People should know that their interactions are being analyzed and how it's used. 
+  - Share metrics and insights with the team
+- **Not a stand-alone tool**
+  - SNA should be used to understand team dynamics, not to evaluate individual performance.
+- **Bias and Fairness**
+  - Be aware of potential biases in data collection and analysis.
+
+
+---
+transition: fade-out
+---
+
+# Context Matters
+
+### Reasons for High Connectedness
+
+<br>
+
+- Leader (influencer)
+- Glue work (connector)
+- Low value work (low-value contributions or others need to do their work)
+
+
+<!-- 
+Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
+
+1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
+2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
+3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
+-->
+ 
+---
+transition: fade-out
+---
+
+# Context Matters
+
+
+### Low Connectedness and Isolation Reasons
+
+<br>
+
+- Vacation
+- Deep Work and Research 
+- Interpersonal conflicts
+
+
+<!-- 
+Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
+
+1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
+2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
+3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
+-->
+ 
 
 ---
 transition: fade-out
@@ -584,130 +675,6 @@ Social Network Analysis clarifies a snapshot of interactions. It doesn't tell yo
 <!-- 
 Without context, interpreations are worthless. SNA is not a shortcut to understanding your team. 
 -->
-
-
----
-transition: fade-out
----
-
-# Performance Metrics? 
-<br>
-<img src="./images/imposter.png" alt="imposter xkcd" style="width: 34em; max-width: 100%; max-height: 340px; object-fit: contain; display: block; margin: 0 auto;" />
-
-XKCD. (2013). "Impostor". XKCD. https://xkcd.com/149/
-
-<!--
-- With these insights, it can be tempting to turn social network analysis into a performance metric
-- especially when we can easily use computational methods to calculate things like how central a person is to the network
--->
-
-
----
-transition: fade-out
----
-
-# Context Matters
-
-
-### Reasons for High Connectedness
-- Leader
-- Glue work
-- Low value work
-
-<br>
-
-### Low Connectedness and Isolation Reasons
-- Vacation
-- Deep Work and Research 
-- Personal Issues 
-
-
-<!-- 
-Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
-
-1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
-2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
-3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
--->
- 
-
----
-transition: fade-out
----
-
-# Performance Metrics or Leadership Report Cards?
-
-<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
-
-<!--
-If anything it's a performance metrics for us as leaders. Are we being good team custodians?
--->
-
----
-transition: fade-out
-layout: center
-class: text-center
----
-
-# How to get Started with Social Network Analysis?
-
----
-transition: fade-out
----
-
-# [geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer?tab=readme-ov-file#installation)
-
-<br>
-<img src="./images/gh-graph-explorer.png" alt="QR Code for https://github.com/geramirez/gh-graph-explorer" style="width: 350px; max-width: 100%; max-height: 380px; object-fit: contain; display: block; margin: 0 auto;" />
-
-
-
----
-transition: fade-out
----
-
-# [Obsidian Graph View](https://obsidian.md/help/plugins/graph)
-
-Using links you can map out connections during 1-1s, team meetings, or retrospectives.
-
-<img src="./images/graph-view.png" alt="Obsidian graph-view plugin" style="width: 350px; max-width: 100%; max-height: 340px; object-fit: contain; display: block; margin: 0 auto;" />
-
-
-<!--
-This is how early anthropologist used to collect data
--->
-
-
----
-transition: fade-out
----
-
-# Observation and Listening
-
-
-- Who do people go to when they're stuck?
-- Who always seems to know what's happening across teams?
-- Who is the last person to learn about important decisions?
-
-
-<!--
-
-- Anthropologists mapped social structures by watching and listening 
-- Best leaders are aware of the social networks around them.
-- If you can answer these questions your well on your way. 
-- Hopefully this talk gives the framing to understand what's happening
-
--->
-
----
-transition: fade-out
----
-
-# What we covered
-
-1. Using Social Network Analysis to understand teams and organizations
-2. Practical team management insights derived from Social Network Analysis
-3. Explore the limits of Social Network Analysis
 
 
 ---
