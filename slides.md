@@ -29,8 +29,8 @@ transition: fade-out
 
 - Sociologist and Anthropologist turned software engineering
 - Started my career as computational social scientist
-- 15 years of experince in technology software engineering and engineering leadership
-
+- 15 years of experience in technology software engineering and engineering leadership
+- Currently at GitHub 
 
 <!--
 - I was stuyding sociology and anthropology in graduate school and roommate was a Computer Science PhD 
@@ -144,8 +144,9 @@ flowchart TD
     DesignMgr --> Des1
 ```
 
-
-
+<!--
+- Typically we see the org chart
+-->
 
 ---
 transition: fade-out
@@ -295,10 +296,12 @@ graph LR
     U3 -- "pr created" --> PR2
 ```
 
+<!--
+This is an interesting way to analyze data because it links people to the topics they work on
+-->
 
 ---
 transition: fade-out
-
 ---
 
 # What does the data look like?
@@ -322,6 +325,9 @@ graph LR
 
 ```
 
+<!--
+This is really useful for seeing how people directly interact, outside of the topics they are working on
+-->
 
 ---
 transition: fade-out
@@ -340,6 +346,7 @@ transition: fade-out
 ---
 transition: fade-out
 ---
+
 # Computational Network Analysis
 - Capture network every 2 weeks
 - Compute number of nodes, connectivity, and density of the network.
@@ -348,7 +355,9 @@ transition: fade-out
 
 <img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
 
-
+<!--
+what you see is a rich story over time
+-->
 
 ---
 transition: fade-out
@@ -592,7 +601,10 @@ transition: fade-out
 </svg>
 
 <!--
-- Good: people are working very well together and sharing the load
+When it might be good
+- the team is really big and area is large
+- topic is difficult and specialized and there is high context bar
+    - AI integration for slack and teams and another working on a complex database cluster deprecation
 -->
 
 ---
@@ -679,6 +691,7 @@ transition: fade-out
 
 <!--
 - Rotate people between teams to cross-pollinate knowledge
+    - I rotated staff + junior engineers, same onboarding process
 -->
 
 ---
@@ -718,6 +731,7 @@ transition: fade-out
 
 <!--
 - Cross-team projects create natural bridges between isolated groups
+- Worked with a team specializing in AI or MS Teams group to help us expand knowledge
 -->
 
 ---
@@ -771,9 +785,9 @@ transition: fade-out
 </svg>
 
 <!--
-- Mob sessions bring multiple people together to work on the same problem
---> 
-
+- what is: Mob sessions bring multiple people together to work on the same problem
+- 1 hour a week mob sessions to work on the hardest customer escalations - faciliators that helped new people learn
+-->
 
 ---
 transition: fade-out
@@ -908,6 +922,7 @@ transition: fade-out
 # Mitigations: Encourage Autonomous Decisions
 
 - Can be hard to let go of, but empowers the team
+- Focus on WHY and DIRECTION, not technical solutions or process
 
 <br>
 <svg viewBox="0 0 400 220" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
@@ -937,6 +952,7 @@ transition: fade-out
 
 <!--
 - Encourage Autonomous Decisions - can be hard to let go of
+- Let go of technical solutions, focus on direction
 -->
 
 ---
@@ -1028,6 +1044,16 @@ transition: fade-out
 <!--
 - Encourage Continuity - if I'm not there, continue the meeting isn't about the manager it's about the team.
 -->
+
+
+---
+transition: fade-out
+---
+
+- Connectivity trending up over time. Lows higher and highers higher.
+
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
+
 
 ---
 transition: fade-out
@@ -1140,12 +1166,60 @@ transition: fade-out
 
 ### Reasons for High Connectedness
 
-<br>
 
 - Leader (influencer)
 - Glue work (connector)
 - Low value work (low-value contributions or others need to do their work)
 
+
+<div class="flex gap-4 items-center justify-center mt-2">
+
+<svg viewBox="0 0 200 200" width="300" height="300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="100" cy="95" r="14" fill="#4F46E5" />
+  <circle cx="100" cy="25" r="10" fill="#94A3B8" />
+  <circle cx="160" cy="45" r="10" fill="#94A3B8" />
+  <circle cx="175" cy="105" r="10" fill="#94A3B8" />
+  <circle cx="145" cy="160" r="10" fill="#94A3B8" />
+  <circle cx="55" cy="160" r="10" fill="#94A3B8" />
+  <circle cx="25" cy="105" r="10" fill="#94A3B8" />
+  <circle cx="40" cy="45" r="10" fill="#94A3B8" />
+  <line x1="100" y1="95" x2="100" y2="25" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="160" y2="45" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="175" y2="105" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="145" y2="160" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="55" y2="160" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="25" y2="105" stroke="#64748B" stroke-width="1.5" />
+  <line x1="100" y1="95" x2="40" y2="45" stroke="#64748B" stroke-width="1.5" />
+  <text x="100" y="192" text-anchor="middle" font-size="5" fill="#CBD5E1">Leader / Influencer</text>
+</svg>
+
+<svg viewBox="0 0 300 200" width="480" height="340" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left group -->
+  <circle cx="60" cy="65" r="10" fill="#94A3B8" />
+  <circle cx="40" cy="105" r="10" fill="#94A3B8" />
+  <circle cx="80" cy="115" r="10" fill="#94A3B8" />
+  <circle cx="95" cy="75" r="14" fill="#F59E0B" />
+  <line x1="60" y1="65" x2="95" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="40" y1="105" x2="95" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="80" y1="115" x2="95" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="60" y1="65" x2="40" y2="105" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <line x1="40" y1="105" x2="80" y2="115" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <!-- Right group -->
+  <circle cx="240" cy="65" r="10" fill="#94A3B8" />
+  <circle cx="260" cy="105" r="10" fill="#94A3B8" />
+  <circle cx="220" cy="115" r="10" fill="#94A3B8" />
+  <circle cx="205" cy="75" r="14" fill="#F59E0B" />
+  <line x1="240" y1="65" x2="205" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="260" y1="105" x2="205" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="220" y1="115" x2="205" y2="75" stroke="#64748B" stroke-width="1.5" />
+  <line x1="240" y1="65" x2="260" y2="105" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <line x1="260" y1="105" x2="220" y2="115" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <!-- Connector between groups -->
+  <line x1="95" y1="75" x2="205" y2="75" stroke="#4F46E5" stroke-width="2.5" stroke-dasharray="6,3" />
+  <text x="150" y="192" text-anchor="middle" font-size="5" fill="#CBD5E1">Glue / Connector</text>
+</svg>
+
+</div>
 
 <!-- 
 Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
@@ -1164,11 +1238,45 @@ transition: fade-out
 
 ### Low Connectedness and Isolation Reasons
 
-<br>
-
 - Vacation
 - Deep Work and Research 
 - Interpersonal conflicts
+
+<div class="flex justify-center mt-2">
+<svg viewBox="0 0 400 220" width="600" height="330" xmlns="http://www.w3.org/2000/svg">
+  <!-- Connected cluster -->
+  <line x1="120" y1="50" x2="170" y2="80" stroke="#64748B" stroke-width="1.5" />
+  <line x1="120" y1="50" x2="80" y2="100" stroke="#64748B" stroke-width="1.5" />
+  <line x1="170" y1="80" x2="140" y2="130" stroke="#64748B" stroke-width="1.5" />
+  <line x1="170" y1="80" x2="220" y2="60" stroke="#64748B" stroke-width="1.5" />
+  <line x1="80" y1="100" x2="100" y2="155" stroke="#64748B" stroke-width="1.5" />
+  <line x1="80" y1="100" x2="140" y2="130" stroke="#64748B" stroke-width="1.5" />
+  <line x1="140" y1="130" x2="100" y2="155" stroke="#64748B" stroke-width="1.5" />
+  <line x1="140" y1="130" x2="200" y2="150" stroke="#64748B" stroke-width="1.5" />
+  <line x1="220" y1="60" x2="250" y2="110" stroke="#64748B" stroke-width="1.5" />
+  <line x1="250" y1="110" x2="200" y2="150" stroke="#64748B" stroke-width="1.5" />
+  <line x1="170" y1="80" x2="250" y2="110" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <line x1="220" y1="60" x2="170" y2="80" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <line x1="100" y1="155" x2="160" y2="185" stroke="#64748B" stroke-width="1.5" />
+  <line x1="200" y1="150" x2="160" y2="185" stroke="#64748B" stroke-width="1.5" />
+  <circle cx="120" cy="50" r="10" fill="#4F46E5" />
+  <circle cx="170" cy="80" r="10" fill="#4F46E5" />
+  <circle cx="80" cy="100" r="10" fill="#4F46E5" />
+  <circle cx="220" cy="60" r="10" fill="#4F46E5" />
+  <circle cx="140" cy="130" r="10" fill="#4F46E5" />
+  <circle cx="100" cy="155" r="10" fill="#4F46E5" />
+  <circle cx="250" cy="110" r="10" fill="#4F46E5" />
+  <circle cx="200" cy="150" r="10" fill="#4F46E5" />
+  <circle cx="160" cy="185" r="10" fill="#4F46E5" />
+  <circle cx="60" cy="50" r="10" fill="#4F46E5" />
+  <line x1="60" y1="50" x2="120" y2="50" stroke="#64748B" stroke-width="1.5" />
+  <line x1="60" y1="50" x2="80" y2="100" stroke="#64748B" stroke-width="1" opacity="0.4" />
+  <!-- Isolated nodes -->
+  <circle cx="340" cy="60" r="10" fill="#F87171" />
+  <circle cx="355" cy="130" r="10" fill="#F87171" />
+  <circle cx="330" cy="185" r="10" fill="#F87171" />
+</svg>
+</div>
 
 
 <!-- 
@@ -1196,8 +1304,15 @@ Social Network Analysis clarifies a snapshot of interactions. It doesn't tell yo
 
 <img src="./images/notifications-team-network-graph.png" alt="Notifications Team Network Graph" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
 
-<!-- 
-Without context, interpreations are worthless. SNA is not a shortcut to understanding your team. 
+<!--
+- How do you deal with these complexities 
+1. Data is more available + AI tooling 
+2. Not enough insights from the data. 
+
+
+Beyond the ethical concerns - 
+
+Without context, interpretations are worthless. SNA is not a shortcut to understanding your team.
 -->
 
 
@@ -1205,4 +1320,15 @@ Without context, interpreations are worthless. SNA is not a shortcut to understa
 transition: fade-out
 ---
 
-# Thank you!
+# Thanks you!
+- @rmw - for helping me with this talk
+- GitHub Notifications and Chat Integrations teams for helping me explore these topics
+
+---
+transition: fade-out
+---
+
+# Questions?
+<br>
+
+# - geramirez/gh-graph-explorer
