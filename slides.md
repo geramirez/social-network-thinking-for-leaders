@@ -41,16 +41,6 @@ transition: fade-out
 - this kicked of my intrests in tech, started as a computational social scienist and slowly transition to software engineering and engineering leadership.
 -->
 
----
-transition: fade-out
----
-
-# Why Social Network Analysis as an Engineering Manager?
-- Understand my team from a different point of view
-- Identify opportunities for improvement in my management practice
-- Unspoken levers of of power and influence in an organization
-
-
 
 ---
 transition: fade-out
@@ -75,6 +65,19 @@ transition: fade-out
 
 
 <img src="./images/pew-center-american-politics.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
+
+<!--
+-
+-->
+
+---
+transition: fade-out
+---
+
+# Why Social Network Analysis as an Engineering Manager?
+- Understand my team from a different point of view
+- Identify opportunities for improvement in my management practice
+- Unspoken levers of of power and influence in an organization
 
 
 
@@ -269,7 +272,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# What does the data look like?
+# What does the network graph look like?
 <br>
 
 ## People to Resources (Bipartite Network)
@@ -337,7 +340,7 @@ transition: fade-out
 ---
 transition: fade-out
 ---
-# Network Analysis
+# Computational Network Analysis
 - Capture network every 2 weeks
 - Compute number of nodes, connectivity, and density of the network.
 
@@ -381,18 +384,136 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Team On and Offboardings Mitigations
+# Mitigations: Buddy System
 
-- Buddy system 
-- Onboarding Round Robins
-- Question of the Day or Game Days
+- Help people find someone to talk to 
+
+<br>
+<svg viewBox="0 0 300 300" style="width: 18em; max-width: 100%; max-height: 280px; display: block; margin: 0 auto;">
+  <!-- Pair connections -->
+  <g stroke="#4a90d9" stroke-width="2.5" opacity="0.6">
+    <line x1="60" y1="40" x2="160" y2="80"/>
+    <line x1="200" y1="30" x2="260" y2="120"/>
+    <line x1="30" y1="150" x2="130" y2="200"/>
+    <line x1="170" y1="170" x2="270" y2="230"/>
+    <line x1="80" y1="260" x2="200" y2="270"/>
+  </g>
+  <!-- Pair 1: top-left, angled down-right -->
+  <circle cx="60" cy="40" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="160" cy="80" r="18" fill="#4a90d9" opacity="0.9"/>
+  <!-- Pair 2: top-right, angled down -->
+  <circle cx="200" cy="30" r="18" fill="#6a9fb5" opacity="0.9"/>
+  <circle cx="260" cy="120" r="18" fill="#6a9fb5" opacity="0.9"/>
+  <!-- Pair 3: mid-left, angled down-right -->
+  <circle cx="30" cy="150" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="130" cy="200" r="18" fill="#4a90d9" opacity="0.9"/>
+  <!-- Pair 4: mid-right, angled down-right -->
+  <circle cx="170" cy="170" r="18" fill="#6a9fb5" opacity="0.9"/>
+  <circle cx="270" cy="230" r="18" fill="#6a9fb5" opacity="0.9"/>
+  <!-- Pair 5: bottom, angled right -->
+  <circle cx="80" cy="260" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="270" r="18" fill="#4a90d9" opacity="0.9"/>
+</svg>
 
 <!--
-
 - Buddy system - help people find someone to talk to 
-- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
--  Question of the Day or Game Days  - Allow for relationship building rather than just pushing people into a silo
+-->
 
+---
+transition: fade-out
+---
+
+# Mitigations: Onboarding Round Robins
+
+- Build onboarding guide that requires 1-1s with team mates
+
+<br>
+<svg viewBox="0 0 400 400" style="width: 22em; max-width: 100%; display: block; margin: 0 auto;">
+  <!-- Edges: all 28 connections between 8 nodes -->
+  <g stroke="#6a9fb5" stroke-width="1" opacity="0.4">
+    <line x1="200" y1="50" x2="306" y2="89"/>
+    <line x1="200" y1="50" x2="350" y2="200"/>
+    <line x1="200" y1="50" x2="306" y2="311"/>
+    <line x1="200" y1="50" x2="200" y2="350"/>
+    <line x1="200" y1="50" x2="94" y2="311"/>
+    <line x1="200" y1="50" x2="50" y2="200"/>
+    <line x1="306" y1="89" x2="350" y2="200"/>
+    <line x1="306" y1="89" x2="306" y2="311"/>
+    <line x1="306" y1="89" x2="200" y2="350"/>
+    <line x1="306" y1="89" x2="94" y2="311"/>
+    <line x1="306" y1="89" x2="50" y2="200"/>
+    <line x1="350" y1="200" x2="306" y2="311"/>
+    <line x1="350" y1="200" x2="200" y2="350"/>
+    <line x1="350" y1="200" x2="94" y2="311"/>
+    <line x1="350" y1="200" x2="50" y2="200"/>
+    <line x1="306" y1="311" x2="200" y2="350"/>
+    <line x1="306" y1="311" x2="94" y2="311"/>
+    <line x1="306" y1="311" x2="50" y2="200"/>
+    <line x1="200" y1="350" x2="94" y2="311"/>
+    <line x1="200" y1="350" x2="50" y2="200"/>
+    <line x1="94" y1="311" x2="50" y2="200"/>
+    <line x1="200" y1="50" x2="94" y2="89"/>
+    <line x1="306" y1="89" x2="94" y2="89"/>
+    <line x1="350" y1="200" x2="94" y2="89"/>
+    <line x1="306" y1="311" x2="94" y2="89"/>
+    <line x1="200" y1="350" x2="94" y2="89"/>
+    <line x1="94" y1="311" x2="94" y2="89"/>
+    <line x1="50" y1="200" x2="94" y2="89"/>
+  </g>
+  <!-- Nodes arranged in octagon -->
+  <g>
+    <circle cx="200" cy="50" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="306" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="350" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="306" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="200" cy="350" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="94" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="50" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
+    <circle cx="94" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
+  </g>
+</svg>
+
+<!--
+- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Question of the Day / Game Days
+
+- Allow for relationship building rather than just pushing people into a silo
+
+<br>
+<svg viewBox="0 0 300 300" style="width: 18em; max-width: 100%; max-height: 280px; display: block; margin: 0 auto;">
+  <!-- Edges from center to outer nodes -->
+  <g stroke="#e8a838" stroke-width="2.5" opacity="0.6">
+    <line x1="150" y1="150" x2="150" y2="25"/>
+    <line x1="150" y1="150" x2="269" y2="68"/>
+    <line x1="150" y1="150" x2="269" y2="232"/>
+    <line x1="150" y1="150" x2="150" y2="275"/>
+    <line x1="150" y1="150" x2="31" y2="232"/>
+    <line x1="150" y1="150" x2="31" y2="68"/>
+    <line x1="150" y1="150" x2="275" y2="150"/>
+  </g>
+  <!-- Outer nodes -->
+  <g>
+    <circle cx="150" cy="25" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="269" cy="68" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="275" cy="150" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="269" cy="232" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="150" cy="275" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="31" cy="232" r="18" fill="#e8a838" opacity="0.9"/>
+    <circle cx="31" cy="68" r="18" fill="#e8a838" opacity="0.9"/>
+  </g>
+  <!-- Center node with emoji -->
+  <circle cx="150" cy="150" r="28" fill="#d94a4a" opacity="0.9"/>
+  <text x="150" y="158" text-anchor="middle" font-size="22">🎮</text>
+</svg>
+
+<!--
+- Question of the Day or Game Days - Allow for relationship building rather than just pushing people into a silo
 -->
 
 ---
@@ -414,24 +535,243 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Cliques and Silos Mitigations
-
+# Mitigations: Are Cliques and Silos Bad?
 
 - Are cliques and silos bad?
-- When It's Positive - Encourage it let it be. Allow deep connections and work.
-- When It's Detrimental - Rotations, cross-team projects, mob sessions
-
 
 <br>
-<img src="./images/cliq-silos.png" alt="Image showing a two silos" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
-
+<svg viewBox="0 0 340 250" style="width: 20em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Edges: all 6 connections between 4 nodes -->
+  <g stroke="#4a90d9" stroke-width="2" opacity="0.5">
+    <line x1="60" y1="60" x2="200" y2="60"/>
+    <line x1="60" y1="60" x2="60" y2="190"/>
+    <line x1="60" y1="60" x2="200" y2="190"/>
+    <line x1="200" y1="60" x2="60" y2="190"/>
+    <line x1="200" y1="60" x2="200" y2="190"/>
+    <line x1="60" y1="190" x2="200" y2="190"/>
+  </g>
+  <!-- 4 nodes -->
+  <circle cx="60" cy="60" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="60" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="60" cy="190" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="190" r="18" fill="#4a90d9" opacity="0.9"/>
+  <!-- Question mark -->
+  <text x="280" y="140" text-anchor="middle" font-size="30" fill="#e8a838">❓</text>
+</svg>
 
 <!--
-- These network proprties can be good or bad
-- Bad: only a few people have information 
-- Good: people are working very well together and sharing the load with a group of people
-- They can also demonsrate a period of Sepicalized work or lack of cliques can show a period of Generalized work
-- They can also be a sign of Deep work vs Cross-team work
+- These network properties can be good or bad
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: When It's Positive
+
+- Encourage it, let it be. Allow deep connections and work.
+
+<br>
+<svg viewBox="0 0 340 250" style="width: 20em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Edges: all 6 connections between 4 nodes -->
+  <g stroke="#4a90d9" stroke-width="2" opacity="0.5">
+    <line x1="60" y1="60" x2="200" y2="60"/>
+    <line x1="60" y1="60" x2="60" y2="190"/>
+    <line x1="60" y1="60" x2="200" y2="190"/>
+    <line x1="200" y1="60" x2="60" y2="190"/>
+    <line x1="200" y1="60" x2="200" y2="190"/>
+    <line x1="60" y1="190" x2="200" y2="190"/>
+  </g>
+  <!-- 4 nodes -->
+  <circle cx="60" cy="60" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="60" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="60" cy="190" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="190" r="18" fill="#4a90d9" opacity="0.9"/>
+  <!-- Green checkmark -->
+  <text x="280" y="140" text-anchor="middle" font-size="25" fill="#4caf50">✅</text>
+</svg>
+
+<!--
+- Good: people are working very well together and sharing the load
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: When It's Detrimental
+
+- Identify when silos are blocking collaboration
+
+<br>
+<svg viewBox="0 0 340 250" style="width: 20em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Edges: all 6 connections between 4 nodes -->
+  <g stroke="#d94a4a" stroke-width="2" opacity="0.5">
+    <line x1="60" y1="60" x2="200" y2="60"/>
+    <line x1="60" y1="60" x2="60" y2="190"/>
+    <line x1="60" y1="60" x2="200" y2="190"/>
+    <line x1="200" y1="60" x2="60" y2="190"/>
+    <line x1="200" y1="60" x2="200" y2="190"/>
+    <line x1="60" y1="190" x2="200" y2="190"/>
+  </g>
+  <!-- 4 nodes -->
+  <circle cx="60" cy="60" r="18" fill="#d94a4a" opacity="0.9"/>
+  <circle cx="200" cy="60" r="18" fill="#d94a4a" opacity="0.9"/>
+  <circle cx="60" cy="190" r="18" fill="#d94a4a" opacity="0.9"/>
+  <circle cx="200" cy="190" r="18" fill="#d94a4a" opacity="0.9"/>
+  <!-- Health icon -->
+  <text x="280" y="140" text-anchor="middle" font-size="30" fill="#d94a4a">🏥</text>
+</svg>
+
+<!--
+- Bad: only a few people have information, silos block knowledge sharing
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Rotations
+
+- Rotate team members between groups to break silos
+
+<br>
+<svg viewBox="0 0 400 250" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Group 1 edges -->
+  <g stroke="#4a90d9" stroke-width="2" opacity="0.4">
+    <line x1="30" y1="60" x2="120" y2="60"/>
+    <line x1="30" y1="60" x2="30" y2="170"/>
+    <line x1="30" y1="60" x2="120" y2="170"/>
+    <line x1="120" y1="60" x2="30" y2="170"/>
+    <line x1="120" y1="60" x2="120" y2="170"/>
+    <line x1="30" y1="170" x2="120" y2="170"/>
+  </g>
+  <!-- Group 2 edges -->
+  <g stroke="#e8a838" stroke-width="2" opacity="0.4">
+    <line x1="280" y1="60" x2="370" y2="60"/>
+    <line x1="280" y1="60" x2="280" y2="170"/>
+    <line x1="280" y1="60" x2="370" y2="170"/>
+    <line x1="370" y1="60" x2="280" y2="170"/>
+    <line x1="370" y1="60" x2="370" y2="170"/>
+    <line x1="280" y1="170" x2="370" y2="170"/>
+  </g>
+  <!-- Group 1 nodes -->
+  <circle cx="30" cy="60" r="16" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="120" cy="60" r="16" fill="#e8a838" opacity="0.9" stroke="#e8a838" stroke-width="2"/>
+  <circle cx="30" cy="170" r="16" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="120" cy="170" r="16" fill="#4a90d9" opacity="0.9"/>
+  <!-- Group 2 nodes -->
+  <circle cx="280" cy="60" r="16" fill="#4a90d9" opacity="0.9" stroke="#4a90d9" stroke-width="2"/>
+  <circle cx="370" cy="60" r="16" fill="#e8a838" opacity="0.9"/>
+  <circle cx="280" cy="170" r="16" fill="#e8a838" opacity="0.9"/>
+  <circle cx="370" cy="170" r="16" fill="#e8a838" opacity="0.9"/>
+  <!-- Swap arrows -->
+  <g fill="none" stroke="#888" stroke-width="2">
+    <path d="M 140,55 C 180,20 220,20 260,55" marker-end="url(#arrowhead)"/>
+    <path d="M 260,75 C 220,110 180,110 140,75" marker-end="url(#arrowhead)"/>
+  </g>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#888"/>
+    </marker>
+  </defs>
+</svg>
+
+<!--
+- Rotate people between teams to cross-pollinate knowledge
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Cross-Team Projects
+
+- Shared projects create bridges between silos
+
+<br>
+<svg viewBox="0 0 300 280" style="width: 18em; max-width: 100%; max-height: 270px; display: block; margin: 0 auto;">
+  <!-- Edges from mob center to all nodes -->
+  <g stroke="#6a9fb5" stroke-width="2" opacity="0.5">
+    <line x1="150" y1="140" x2="150" y2="20"/>
+    <line x1="150" y1="140" x2="255" y2="55"/>
+    <line x1="150" y1="140" x2="280" y2="140"/>
+    <line x1="150" y1="140" x2="255" y2="225"/>
+    <line x1="150" y1="140" x2="150" y2="260"/>
+    <line x1="150" y1="140" x2="45" y2="225"/>
+    <line x1="150" y1="140" x2="20" y2="140"/>
+    <line x1="150" y1="140" x2="45" y2="55"/>
+  </g>
+  <!-- Outer nodes -->
+  <circle cx="150" cy="20" r="14" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="255" cy="55" r="14" fill="#e8a838" opacity="0.9"/>
+  <circle cx="280" cy="140" r="14" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="255" cy="225" r="14" fill="#e8a838" opacity="0.9"/>
+  <circle cx="150" cy="260" r="14" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="45" cy="225" r="14" fill="#e8a838" opacity="0.9"/>
+  <circle cx="20" cy="140" r="14" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="45" cy="55" r="14" fill="#e8a838" opacity="0.9"/>
+  <!-- Project center node -->
+  <circle cx="150" cy="140" r="80" fill="#6a9fb5" opacity="0.9"/>
+  <text x="150" y="145" text-anchor="middle" font-size="10" fill="white" font-weight="bold">Project</text>
+</svg>
+
+<!--
+- Cross-team projects create natural bridges between isolated groups
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Mob Sessions
+
+- Mob programming brings everyone together around shared work
+
+<br>
+<svg viewBox="0 0 400 250" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Group 1 edges -->
+  <g stroke="#4a90d9" stroke-width="2" opacity="0.4">
+    <line x1="30" y1="50" x2="110" y2="50"/>
+    <line x1="30" y1="50" x2="30" y2="150"/>
+    <line x1="30" y1="50" x2="110" y2="150"/>
+    <line x1="110" y1="50" x2="30" y2="150"/>
+    <line x1="110" y1="50" x2="110" y2="150"/>
+    <line x1="30" y1="150" x2="110" y2="150"/>
+  </g>
+  <!-- Group 2 edges -->
+  <g stroke="#e8a838" stroke-width="2" opacity="0.4">
+    <line x1="290" y1="50" x2="370" y2="50"/>
+    <line x1="290" y1="50" x2="290" y2="150"/>
+    <line x1="290" y1="50" x2="370" y2="150"/>
+    <line x1="370" y1="50" x2="290" y2="150"/>
+    <line x1="370" y1="50" x2="370" y2="150"/>
+    <line x1="290" y1="150" x2="370" y2="150"/>
+  </g>
+  <!-- Bridge edges to mob node -->
+  <g stroke="#4caf50" stroke-width="2.5" opacity="0.6">
+    <line x1="110" y1="50" x2="200" y2="120"/>
+    <line x1="110" y1="150" x2="200" y2="120"/>
+    <line x1="290" y1="50" x2="200" y2="120"/>
+    <line x1="290" y1="150" x2="200" y2="120"/>
+  </g>
+  <!-- Group 1 nodes -->
+  <circle cx="30" cy="50" r="16" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="110" cy="50" r="16" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="30" cy="150" r="16" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="110" cy="150" r="16" fill="#4a90d9" opacity="0.9"/>
+  <!-- Group 2 nodes -->
+  <circle cx="290" cy="50" r="16" fill="#e8a838" opacity="0.9"/>
+  <circle cx="370" cy="50" r="16" fill="#e8a838" opacity="0.9"/>
+  <circle cx="290" cy="150" r="16" fill="#e8a838" opacity="0.9"/>
+  <circle cx="370" cy="150" r="16" fill="#e8a838" opacity="0.9"/>
+  <!-- Mob node -->
+  <circle cx="200" cy="120" r="50" fill="#4caf50" opacity="0.9"/>
+  <text x="200" y="125" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Mob</text>
+</svg>
+
+<!--
+- Mob sessions bring multiple people together to work on the same problem
 --> 
 
 
@@ -457,19 +797,91 @@ transition: fade-out
 transition: fade-out
 ---
 
-# The Seniority Bottleneck Mitigations
+# Mitigations: Mob Sessions
 
-- Mob Sessions
-- Creating Junior-only Task Forces
+- Mob programming generates group conversations, especially with an engaging facilitator
 
 <br>
-<img src="./images/seniors-and-juniors.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; max-height: 300px; object-fit: contain; display: block; margin: 0 auto;" />
-
-
+<svg viewBox="0 0 300 250" style="width: 18em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Edges from mob center to all nodes -->
+  <g stroke="#6a9fb5" stroke-width="2" opacity="0.5">
+    <line x1="150" y1="125" x2="60" y2="35"/>
+    <line x1="150" y1="125" x2="260" y2="50"/>
+    <line x1="150" y1="125" x2="55" y2="210"/>
+    <line x1="150" y1="125" x2="250" y2="200"/>
+  </g>
+  <!-- Outer nodes: different sizes and colors -->
+  <circle cx="60" cy="35" r="12" fill="#e8a838" opacity="0.9"/>
+  <circle cx="260" cy="50" r="18" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="55" cy="210" r="10" fill="#d94a4a" opacity="0.9"/>
+  <circle cx="250" cy="200" r="15" fill="#4caf50" opacity="0.9"/>
+  <!-- Mob center node -->
+  <circle cx="150" cy="125" r="60" fill="#6a9fb5" opacity="0.9"/>
+  <text x="150" y="130" text-anchor="middle" font-size="12" fill="white" font-weight="bold">Mob</text>
+</svg>
 
 <!--
- allows juniors to build confidence, practice leadership and communication in a safer environment and a smaller scale. 
-- Setting up Mob programming sessions: an easier way to generate group conversations and communication especially when you have an engaging facilitator
+- Setting up Mob programming sessions: an easier way to generate group conversations
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Creating Junior-only Task Forces
+
+- Allows juniors to build confidence, practice leadership and communication at a smaller scale
+
+<br>
+<svg viewBox="0 0 400 220" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Junior group edges to project -->
+  <g stroke="#4caf50" stroke-width="2" opacity="0.5">
+    <line x1="40" y1="50" x2="140" y2="110"/>
+    <line x1="40" y1="170" x2="140" y2="110"/>
+    <line x1="100" y1="30" x2="140" y2="110"/>
+  </g>
+  <!-- Junior nodes (small) -->
+  <circle cx="40" cy="50" r="12" fill="#4caf50" opacity="0.9"/>
+  <circle cx="40" cy="170" r="12" fill="#4caf50" opacity="0.9"/>
+  <circle cx="100" cy="30" r="12" fill="#4caf50" opacity="0.9"/>
+  <!-- Project node -->
+  <circle cx="140" cy="110" r="65" fill="#6a9fb5" opacity="0.9"/>
+  <text x="140" y="115" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Project</text>
+  <!-- Barrier line -->
+  <line x1="220" y1="20" x2="220" y2="200" stroke="#888" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
+  <!-- Senior nodes (larger) -->
+  <circle cx="300" cy="70" r="22" fill="#e8a838" opacity="0.9"/>
+  <circle cx="300" cy="150" r="22" fill="#e8a838" opacity="0.9"/>
+  <!-- Senior link -->
+  <line x1="300" y1="92" x2="300" y2="128" stroke="#e8a838" stroke-width="2" opacity="0.5"/>
+</svg>
+
+<!--
+- Allows juniors to build confidence, practice leadership in a safer environment
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Real Results
+
+<br>
+<div style="display: flex; align-items: center; justify-content: center; gap: 1em;">
+  <img src="./images/central-senior.png" alt="Before: central senior engineer" style="width: 14em; max-height: 300px; object-fit: contain;" />
+  <svg viewBox="0 0 80 40" style="width: 4em;">
+    <defs>
+      <marker id="resultarrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+        <polygon points="0 0, 8 3, 0 6" fill="#4caf50"/>
+      </marker>
+    </defs>
+    <line x1="5" y1="20" x2="65" y2="20" stroke="#4caf50" stroke-width="3" marker-end="url(#resultarrow)"/>
+  </svg>
+  <img src="./images/seniors-and-juniors.png" alt="After: seniors and juniors connected" style="width: 14em; max-height: 300px; object-fit: contain;" />
+</div>
+
+<!--
+- Real results from applying these mitigations over time
 -->
 
 
@@ -493,15 +905,127 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Manager Bottlenecks Mitigations
+# Mitigations: Encourage Autonomous Decisions
 
-- Encourage Autonomous Decisions 
-- Delegate Meeting Leadership 
-- Encourage Continuity
+- Can be hard to let go of, but empowers the team
+
+<br>
+<svg viewBox="0 0 400 220" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <defs>
+    <marker id="dirarrow" markerWidth="10" markerHeight="8" refX="10" refY="4" orient="auto">
+      <polygon points="0 0, 10 4, 0 8" fill="#4caf50"/>
+    </marker>
+  </defs>
+  <!-- Direction arrow -->
+  <line x1="15" y1="110" x2="385" y2="110" stroke="#4caf50" stroke-width="4" opacity="0.35" marker-end="url(#dirarrow)"/>
+  <!-- Node 1 -->
+  <circle cx="60" cy="60" r="26" fill="#4a90d9" opacity="0.9"/>
+  <text x="60" y="67" text-anchor="middle" font-size="16">🧭</text>
+  <!-- Node 2 -->
+  <circle cx="130" cy="160" r="26" fill="#e8a838" opacity="0.9"/>
+  <text x="130" y="167" text-anchor="middle" font-size="16">🧭</text>
+  <!-- Node 3 -->
+  <circle cx="200" cy="50" r="26" fill="#6a9fb5" opacity="0.9"/>
+  <text x="200" y="57" text-anchor="middle" font-size="16">🧭</text>
+  <!-- Node 4 -->
+  <circle cx="275" cy="165" r="26" fill="#d94a4a" opacity="0.9"/>
+  <text x="275" y="172" text-anchor="middle" font-size="16">🧭</text>
+  <!-- Node 5 -->
+  <circle cx="345" cy="55" r="26" fill="#4caf50" opacity="0.9"/>
+  <text x="345" y="62" text-anchor="middle" font-size="16">🧭</text>
+</svg>
 
 <!--
-- Encourage Autonomous Decisions   - can be hard to let go of
+- Encourage Autonomous Decisions - can be hard to let go of
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Delegate Meeting Leadership
+
+- For example mob sessions or retros — it's about the team, not the manager
+
+<br>
+<svg viewBox="0 0 400 250" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
+  <!-- Group 1 edges -->
+  <g stroke="#4a90d9" stroke-width="1.5" opacity="0.4">
+    <line x1="20" y1="30" x2="70" y2="70"/>
+    <line x1="20" y1="110" x2="70" y2="70"/>
+    <line x1="60" y1="15" x2="70" y2="70"/>
+  </g>
+  <!-- Group 2 edges -->
+  <g stroke="#e8a838" stroke-width="1.5" opacity="0.4">
+    <line x1="155" y1="145" x2="200" y2="185"/>
+    <line x1="245" y1="145" x2="200" y2="185"/>
+    <line x1="200" y1="130" x2="200" y2="185"/>
+  </g>
+  <!-- Group 3 edges -->
+  <g stroke="#4caf50" stroke-width="1.5" opacity="0.4">
+    <line x1="320" y1="20" x2="340" y2="70"/>
+    <line x1="380" y1="30" x2="340" y2="70"/>
+    <line x1="370" y1="100" x2="340" y2="70"/>
+  </g>
+  <!-- Group 1 nodes -->
+  <circle cx="20" cy="30" r="12" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="20" cy="110" r="12" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="60" cy="15" r="12" fill="#4a90d9" opacity="0.9"/>
+  <!-- Group 1 Meeting node -->
+  <circle cx="70" cy="70" r="35" fill="#6a9fb5" opacity="0.9"/>
+  <text x="70" y="75" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
+  <!-- Group 2 nodes -->
+  <circle cx="155" cy="145" r="12" fill="#e8a838" opacity="0.9"/>
+  <circle cx="245" cy="145" r="12" fill="#e8a838" opacity="0.9"/>
+  <circle cx="200" cy="130" r="12" fill="#e8a838" opacity="0.9"/>
+  <!-- Group 2 Meeting node -->
+  <circle cx="200" cy="185" r="35" fill="#6a9fb5" opacity="0.9"/>
+  <text x="200" y="190" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
+  <!-- Group 3 nodes -->
+  <circle cx="320" cy="20" r="12" fill="#4caf50" opacity="0.9"/>
+  <circle cx="380" cy="30" r="12" fill="#4caf50" opacity="0.9"/>
+  <circle cx="370" cy="100" r="12" fill="#4caf50" opacity="0.9"/>
+  <!-- Group 3 Meeting node -->
+  <circle cx="340" cy="70" r="35" fill="#6a9fb5" opacity="0.9"/>
+  <text x="340" y="75" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
+</svg>
+
+<!--
 - Delegate meeting leadership - for example mob sessions or retros
+-->
+
+---
+transition: fade-out
+---
+
+# Mitigations: Encourage Continuity
+
+- If I'm not there, continue — the meeting isn't about the manager, it's about the team
+
+<br>
+<svg viewBox="0 0 400 200" style="width: 22em; max-width: 100%; max-height: 240px; display: block; margin: 0 auto;">
+  <!-- Vacation node -->
+  <circle cx="70" cy="80" r="30" fill="#e8a838" opacity="0.9"/>
+  <text x="70" y="88" text-anchor="middle" font-size="26">🌴</text>
+  <text x="70" y="140" text-anchor="middle" font-size="7" fill="#888">vacation</text>
+  <!-- Edges to project -->
+  <g stroke="#4caf50" stroke-width="2" opacity="0.5">
+    <line x1="220" y1="25" x2="290" y2="100"/>
+    <line x1="360" y1="25" x2="290" y2="100"/>
+    <line x1="220" y1="175" x2="290" y2="100"/>
+    <line x1="360" y1="175" x2="290" y2="100"/>
+  </g>
+  <!-- Team nodes -->
+  <circle cx="220" cy="25" r="14" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="360" cy="25" r="14" fill="#e8a838" opacity="0.9"/>
+  <circle cx="220" cy="175" r="14" fill="#6a9fb5" opacity="0.9"/>
+  <circle cx="360" cy="175" r="14" fill="#4caf50" opacity="0.9"/>
+  <!-- Project node -->
+  <circle cx="290" cy="100" r="70" fill="#4caf50" opacity="0.9"/>
+  <text x="290" y="105" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Project</text>
+</svg>
+
+<!--
 - Encourage Continuity - if I'm not there, continue the meeting isn't about the manager it's about the team.
 -->
 
