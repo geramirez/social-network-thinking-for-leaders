@@ -734,60 +734,6 @@ transition: fade-out
 - Worked with a team specializing in AI or MS Teams group to help us expand knowledge
 -->
 
----
-transition: fade-out
----
-
-# Mitigations: Mob Sessions
-
-- Mob programming brings everyone together around shared work
-
-<br>
-<svg viewBox="0 0 400 250" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
-  <!-- Group 1 edges -->
-  <g stroke="#4a90d9" stroke-width="2" opacity="0.4">
-    <line x1="30" y1="50" x2="110" y2="50"/>
-    <line x1="30" y1="50" x2="30" y2="150"/>
-    <line x1="30" y1="50" x2="110" y2="150"/>
-    <line x1="110" y1="50" x2="30" y2="150"/>
-    <line x1="110" y1="50" x2="110" y2="150"/>
-    <line x1="30" y1="150" x2="110" y2="150"/>
-  </g>
-  <!-- Group 2 edges -->
-  <g stroke="#e8a838" stroke-width="2" opacity="0.4">
-    <line x1="290" y1="50" x2="370" y2="50"/>
-    <line x1="290" y1="50" x2="290" y2="150"/>
-    <line x1="290" y1="50" x2="370" y2="150"/>
-    <line x1="370" y1="50" x2="290" y2="150"/>
-    <line x1="370" y1="50" x2="370" y2="150"/>
-    <line x1="290" y1="150" x2="370" y2="150"/>
-  </g>
-  <!-- Bridge edges to mob node -->
-  <g stroke="#4caf50" stroke-width="2.5" opacity="0.6">
-    <line x1="110" y1="50" x2="200" y2="120"/>
-    <line x1="110" y1="150" x2="200" y2="120"/>
-    <line x1="290" y1="50" x2="200" y2="120"/>
-    <line x1="290" y1="150" x2="200" y2="120"/>
-  </g>
-  <!-- Group 1 nodes -->
-  <circle cx="30" cy="50" r="16" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="110" cy="50" r="16" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="30" cy="150" r="16" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="110" cy="150" r="16" fill="#4a90d9" opacity="0.9"/>
-  <!-- Group 2 nodes -->
-  <circle cx="290" cy="50" r="16" fill="#e8a838" opacity="0.9"/>
-  <circle cx="370" cy="50" r="16" fill="#e8a838" opacity="0.9"/>
-  <circle cx="290" cy="150" r="16" fill="#e8a838" opacity="0.9"/>
-  <circle cx="370" cy="150" r="16" fill="#e8a838" opacity="0.9"/>
-  <!-- Mob node -->
-  <circle cx="200" cy="120" r="50" fill="#4caf50" opacity="0.9"/>
-  <text x="200" y="125" text-anchor="middle" font-size="9" fill="white" font-weight="bold">Mob</text>
-</svg>
-
-<!--
-- what is: Mob sessions bring multiple people together to work on the same problem
-- 1 hour a week mob sessions to work on the hardest customer escalations - faciliators that helped new people learn
--->
 
 ---
 transition: fade-out
@@ -835,7 +781,7 @@ transition: fade-out
 </svg>
 
 <!--
-- Setting up Mob programming sessions: an easier way to generate group conversations
+- Setting up Mob programming sessions: an easier way to generate group conversations, help seniors show how they operate
 -->
 
 ---
@@ -955,60 +901,6 @@ transition: fade-out
 - Let go of technical solutions, focus on direction
 -->
 
----
-transition: fade-out
----
-
-# Mitigations: Delegate Meeting Leadership
-
-- For example mob sessions or retros — it's about the team, not the manager
-
-<br>
-<svg viewBox="0 0 400 250" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
-  <!-- Group 1 edges -->
-  <g stroke="#4a90d9" stroke-width="1.5" opacity="0.4">
-    <line x1="20" y1="30" x2="70" y2="70"/>
-    <line x1="20" y1="110" x2="70" y2="70"/>
-    <line x1="60" y1="15" x2="70" y2="70"/>
-  </g>
-  <!-- Group 2 edges -->
-  <g stroke="#e8a838" stroke-width="1.5" opacity="0.4">
-    <line x1="155" y1="145" x2="200" y2="185"/>
-    <line x1="245" y1="145" x2="200" y2="185"/>
-    <line x1="200" y1="130" x2="200" y2="185"/>
-  </g>
-  <!-- Group 3 edges -->
-  <g stroke="#4caf50" stroke-width="1.5" opacity="0.4">
-    <line x1="320" y1="20" x2="340" y2="70"/>
-    <line x1="380" y1="30" x2="340" y2="70"/>
-    <line x1="370" y1="100" x2="340" y2="70"/>
-  </g>
-  <!-- Group 1 nodes -->
-  <circle cx="20" cy="30" r="12" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="20" cy="110" r="12" fill="#4a90d9" opacity="0.9"/>
-  <circle cx="60" cy="15" r="12" fill="#4a90d9" opacity="0.9"/>
-  <!-- Group 1 Meeting node -->
-  <circle cx="70" cy="70" r="35" fill="#6a9fb5" opacity="0.9"/>
-  <text x="70" y="75" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
-  <!-- Group 2 nodes -->
-  <circle cx="155" cy="145" r="12" fill="#e8a838" opacity="0.9"/>
-  <circle cx="245" cy="145" r="12" fill="#e8a838" opacity="0.9"/>
-  <circle cx="200" cy="130" r="12" fill="#e8a838" opacity="0.9"/>
-  <!-- Group 2 Meeting node -->
-  <circle cx="200" cy="185" r="35" fill="#6a9fb5" opacity="0.9"/>
-  <text x="200" y="190" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
-  <!-- Group 3 nodes -->
-  <circle cx="320" cy="20" r="12" fill="#4caf50" opacity="0.9"/>
-  <circle cx="380" cy="30" r="12" fill="#4caf50" opacity="0.9"/>
-  <circle cx="370" cy="100" r="12" fill="#4caf50" opacity="0.9"/>
-  <!-- Group 3 Meeting node -->
-  <circle cx="340" cy="70" r="35" fill="#6a9fb5" opacity="0.9"/>
-  <text x="340" y="75" text-anchor="middle" font-size="3" fill="white" font-weight="bold">Meeting</text>
-</svg>
-
-<!--
-- Delegate meeting leadership - for example mob sessions or retros
--->
 
 ---
 transition: fade-out
