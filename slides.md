@@ -25,7 +25,7 @@ duration: 20min
 transition: fade-out
 ---
 
-# About me?
+# About me
 
 - Sociologist and Anthropologist turned software engineering
 - Started my career as computational social scientist
@@ -67,7 +67,7 @@ transition: fade-out
 <img src="./images/pew-center-american-politics.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
 <!--
--
+- came about in 1930, during a time when we were starting to collect a lot of data on people.
 -->
 
 ---
@@ -1050,6 +1050,8 @@ transition: fade-out
 transition: fade-out
 ---
 
+# Did all the mitigations work?
+
 - Connectivity trending up over time. Lows higher and highers higher.
 
 <img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
@@ -1320,7 +1322,7 @@ Without context, interpretations are worthless. SNA is not a shortcut to underst
 transition: fade-out
 ---
 
-# Thanks you!
+# Thank you!
 - @rmw - for helping me with this talk
 - GitHub Notifications and Chat Integrations teams for helping me explore these topics
 
