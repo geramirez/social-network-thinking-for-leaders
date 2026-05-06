@@ -75,9 +75,61 @@ transition: fade-out
 ---
 
 # Why Social Network Analysis as an Engineering Manager?
-- Understand my team from a different point of view
-- Identify opportunities for improvement in my management practice
-- Unspoken levers of of power and influence in an organization
+- Understand the team I manage from a different point of view
+
+<div style="display: flex; justify-content: center;">
+<svg width="500" height="280" viewBox="0 0 500 280" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left side: upright tree (original view) -->
+  <g opacity="0.7">
+    <!-- Edges -->
+    <line x1="100" y1="60" x2="60" y2="120" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="100" y1="60" x2="140" y2="120" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="60" y1="120" x2="40" y2="180" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="60" y1="120" x2="80" y2="180" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="140" y1="120" x2="120" y2="180" stroke="#4a90d9" stroke-width="1.5"/>
+    <line x1="140" y1="120" x2="160" y2="180" stroke="#4a90d9" stroke-width="1.5"/>
+    <!-- Nodes -->
+    <circle cx="100" cy="60" r="8" fill="#4a90d9"/>
+    <circle cx="60" cy="120" r="7" fill="#6a9fb5"/>
+    <circle cx="140" cy="120" r="7" fill="#6a9fb5"/>
+    <circle cx="40" cy="180" r="6" fill="#93c5e1"/>
+    <circle cx="80" cy="180" r="6" fill="#93c5e1"/>
+    <circle cx="120" cy="180" r="6" fill="#93c5e1"/>
+    <circle cx="160" cy="180" r="6" fill="#93c5e1"/>
+  </g>
+
+  <!-- Lens in the center -->
+  <ellipse cx="250" cy="130" rx="45" ry="90" fill="none" stroke="#e8a838" stroke-width="3" opacity="0.8"/>
+  <!-- Lens shine -->
+  <ellipse cx="238" cy="100" rx="12" ry="30" fill="#e8a838" opacity="0.1"/>
+  <!-- Lens handle -->
+  <line x1="250" y1="220" x2="250" y2="270" stroke="#e8a838" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Right side: flipped network (inverted view) -->
+  <g opacity="0.7">
+    <!-- Edges (flipped - tree grows upward, network-style connections added) -->
+    <line x1="400" y1="200" x2="360" y2="140" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="400" y1="200" x2="440" y2="140" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="360" y1="140" x2="340" y2="80" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="360" y1="140" x2="380" y2="80" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="440" y1="140" x2="420" y2="80" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="440" y1="140" x2="460" y2="80" stroke="#8b5cf6" stroke-width="1.5"/>
+    <!-- Extra cross-connections (network view) -->
+    <line x1="340" y1="80" x2="420" y2="80" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="380" y1="80" x2="460" y2="80" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="340" y1="80" x2="440" y2="140" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <line x1="360" y1="140" x2="440" y2="140" stroke="#8b5cf6" stroke-width="1" opacity="0.4"/>
+    <!-- Nodes -->
+    <circle cx="400" cy="200" r="8" fill="#8b5cf6"/>
+    <circle cx="360" cy="140" r="7" fill="#a78bfa"/>
+    <circle cx="440" cy="140" r="7" fill="#a78bfa"/>
+    <circle cx="340" cy="80" r="6" fill="#c4b5fd"/>
+    <circle cx="380" cy="80" r="6" fill="#c4b5fd"/>
+    <circle cx="420" cy="80" r="6" fill="#c4b5fd"/>
+    <circle cx="460" cy="80" r="6" fill="#c4b5fd"/>
+  </g>
+</svg>
+</div>
 
 
 
@@ -86,8 +138,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Applying Social Network Analysis to Organizations
-
+# The Organizational Chart vs The Social Network
 
 <br>
 
@@ -145,14 +196,14 @@ flowchart TD
 ```
 
 <!--
-- Typically we see the org chart
+- Let me give you an example
 -->
 
 ---
 transition: fade-out
 ---
 
-# What can we learn with SNA in a work context?
+# The Organizational Chart vs The Social Network
 
 <br>
 
@@ -234,12 +285,31 @@ graph TD
 ```
 
 
-
 <!--
 - Influencers and Connectors - people who are the center and those that connect different groups together.
 - Group dyamics that are not visible in the organizational chart.
 - Interpersonal Connections that are not broadcast - for example, a silent contributors that works via 1-1s vs group meetings.
 -->
+
+
+---
+theme: default
+transition: fade-out
+---
+
+# New Lens Means New Questions
+
+<br>
+
+
+- What causes nework connectivity to drop?
+- Do we have context silos?
+- Can individuals be too central to the network?
+
+<br>
+
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
+
 
 
 
@@ -393,12 +463,13 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Mitigations: Buddy System
+# Mitigations: Buddy System & Round Robins
 
-- Help people find someone to talk to 
+- Buddy system — help people find someone to talk to
+- Onboarding round robins — build a guide that requires 1-1s with teammates
 
-<br>
-<svg viewBox="0 0 300 300" style="width: 18em; max-width: 100%; max-height: 280px; display: block; margin: 0 auto;">
+<div style="display: flex; justify-content: center; gap: 2em;">
+<svg viewBox="0 0 300 300" style="width: 14em; max-height: 240px;">
   <!-- Pair connections -->
   <g stroke="#4a90d9" stroke-width="2.5" opacity="0.6">
     <line x1="60" y1="40" x2="160" y2="80"/>
@@ -407,38 +478,19 @@ transition: fade-out
     <line x1="170" y1="170" x2="270" y2="230"/>
     <line x1="80" y1="260" x2="200" y2="270"/>
   </g>
-  <!-- Pair 1: top-left, angled down-right -->
   <circle cx="60" cy="40" r="18" fill="#4a90d9" opacity="0.9"/>
   <circle cx="160" cy="80" r="18" fill="#4a90d9" opacity="0.9"/>
-  <!-- Pair 2: top-right, angled down -->
   <circle cx="200" cy="30" r="18" fill="#6a9fb5" opacity="0.9"/>
   <circle cx="260" cy="120" r="18" fill="#6a9fb5" opacity="0.9"/>
-  <!-- Pair 3: mid-left, angled down-right -->
   <circle cx="30" cy="150" r="18" fill="#4a90d9" opacity="0.9"/>
   <circle cx="130" cy="200" r="18" fill="#4a90d9" opacity="0.9"/>
-  <!-- Pair 4: mid-right, angled down-right -->
   <circle cx="170" cy="170" r="18" fill="#6a9fb5" opacity="0.9"/>
   <circle cx="270" cy="230" r="18" fill="#6a9fb5" opacity="0.9"/>
-  <!-- Pair 5: bottom, angled right -->
   <circle cx="80" cy="260" r="18" fill="#4a90d9" opacity="0.9"/>
   <circle cx="200" cy="270" r="18" fill="#4a90d9" opacity="0.9"/>
 </svg>
-
-<!--
-- Buddy system - help people find someone to talk to 
--->
-
----
-transition: fade-out
----
-
-# Mitigations: Onboarding Round Robins
-
-- Build onboarding guide that requires 1-1s with team mates
-
-<br>
-<svg viewBox="0 0 400 400" style="width: 22em; max-width: 100%; display: block; margin: 0 auto;">
-  <!-- Edges: all 28 connections between 8 nodes -->
+<svg viewBox="0 0 400 400" style="width: 14em; max-height: 240px;">
+  <!-- Edges: all connections between 8 nodes -->
   <g stroke="#6a9fb5" stroke-width="1" opacity="0.4">
     <line x1="200" y1="50" x2="306" y2="89"/>
     <line x1="200" y1="50" x2="350" y2="200"/>
@@ -470,20 +522,20 @@ transition: fade-out
     <line x1="50" y1="200" x2="94" y2="89"/>
   </g>
   <!-- Nodes arranged in octagon -->
-  <g>
-    <circle cx="200" cy="50" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="306" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="350" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="306" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="200" cy="350" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="94" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="50" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
-    <circle cx="94" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
-  </g>
+  <circle cx="200" cy="50" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="306" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="350" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="306" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="200" cy="350" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="94" cy="311" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="50" cy="200" r="22" fill="#4a90d9" opacity="0.9"/>
+  <circle cx="94" cy="89" r="22" fill="#4a90d9" opacity="0.9"/>
 </svg>
+</div>
 
 <!--
-- Onboarding Round Robins Build onboarding guide that requires 1-1s with team mates
+- Buddy system - help people find someone to talk to 
+- Onboarding Round Robins - Build onboarding guide that requires 1-1s with team mates
 -->
 
 ---
@@ -525,6 +577,19 @@ transition: fade-out
 - Question of the Day or Game Days - Allow for relationship building rather than just pushing people into a silo
 -->
 
+---
+transition: fade-out
+---
+
+# Mitigations: Don't let so many people join at once
+
+<div style="display: flex; justify-content: center;">
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="150" cy="150" r="120" fill="none" stroke="#e53e3e" stroke-width="12"/>
+  <line x1="70" y1="70" x2="230" y2="230" stroke="#e53e3e" stroke-width="12" stroke-linecap="round"/>
+  <line x1="230" y1="70" x2="70" y2="230" stroke="#e53e3e" stroke-width="12" stroke-linecap="round"/>
+</svg>
+</div>
 ---
 transition: fade-out
 ---
@@ -868,7 +933,7 @@ transition: fade-out
 # Mitigations: Encourage Autonomous Decisions
 
 - Can be hard to let go of, but empowers the team
-- Focus on WHY and DIRECTION, not technical solutions or process
+- Focus on WHY and OUTCOMES, not technical solutions or process
 
 <br>
 <svg viewBox="0 0 400 220" style="width: 22em; max-width: 100%; max-height: 260px; display: block; margin: 0 auto;">
@@ -956,9 +1021,9 @@ transition: fade-out
 # Social Network Analysis with AI?
 
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; justify-content: center; align-items: center; gap: 4rem;">
-  <img src="./images/neo4j-logo.svg" alt="Neo4J logo" style="height: 100px; width: auto;" />
-  <img src="./images/mcp-logo.png" alt="Model Context Protocol (MCP) logo" style="max-width: 220px; max-height: 100px; width: auto; height: auto;" />
-  <img src="./images/claude-desktop-logo.svg" alt="Claude Desktop logo" style="height: 100px; width: auto;" />
+  <img src="./images/neo4j-logo.svg" alt="Neo4J logo" style="height: 100px; width: auto; background: rgba(255,255,255,0.9); border-radius: 12px; padding: 12px;" />
+  <img src="./images/mcp-logo.png" alt="Model Context Protocol (MCP) logo" style="max-width: 220px; max-height: 100px; width: auto; height: auto; background: rgba(255,255,255,0.9); border-radius: 12px; padding: 12px;" />
+  <img src="./images/claude-desktop-logo.svg" alt="Claude Desktop logo" style="height: 100px; width: auto; background: rgba(255,255,255,0.9); border-radius: 12px; padding: 12px;" />
 </div>
 
 <!--
@@ -972,19 +1037,11 @@ Yes, we can use AI to automate the process of collecting, analyzing, and visuali
 transition: fade-out
 ---
 
-# Engineer Manager Claude
+# LLM Brain
 - anonymized org chart + MCP server
 
 <img src="./images/claude-prompt.png" alt="Screenshot of a Claude prompt for engineering manager tasks" style="max-height: 75%; width: auto; display: block; margin: 0 auto;" />
 
-
----
-transition: fade-out
----
-
-# Engineer Manager Claude
-
-<img src="./images/claude-explorer.png" alt="Screenshot of asking Claude to explore team network data" style="width: 100%; max-height: 80%; object-fit: contain; display: block; margin: 0 auto;" />
 
 
 ---
@@ -1000,6 +1057,28 @@ transition: fade-out
 - In the recent past when you had to manually code line by line, you had time to think about if the thing your building makes sense. 
 - The same applies in this case. Using AI to automate difficult managerial tasks is becoming easier.
 - But we should pause and think about the implications, ethics, and limits of what we are doing. 
+
+- AI makes it dangerously easy to act on this data without judgment — here's the one moment that made me pause and why.
+
+-->
+
+
+---
+transition: fade-out
+---
+
+# Engineer Manager Claude
+
+- Using AI + SNA for performance management 
+
+<br/>
+
+<img src="./images/claude-explorer.png" alt="Screenshot of asking Claude to explore team network data" style="width: 100%; max-height: 80%; object-fit: contain; display: block; margin: 0 auto;" />
+
+
+<!--
+- I looked at the results and there was a degree of truth to it. 
+- Some of the people that were low ranked collaborators were struggling
 -->
 
 
@@ -1026,16 +1105,6 @@ I think in some ways with the ease of which we can do social network analysis an
 
 -->
 
----
-transition: fade-out
----
-
-# Ethical Considerations
-
-- In Academia this would require Institutional Review Boards (also a product of post-WWII ethical concerns in research)
-- As a manager you have much more access to personal and senstive data about your team, and you have a lot of power over them... use it responsibly.
-
-<br>
 
 ---
 transition: fade-out
@@ -1046,8 +1115,9 @@ transition: fade-out
 - **Transparency**
   - People should know that their interactions are being analyzed and how it's used. 
   - Share metrics and insights with the team
-- **Not a stand-alone tool**
-  - SNA should be used to understand team dynamics, not to evaluate individual performance.
+- **Groups not Individuals**
+  - SNA is for understanding team dynamics
+  - SNA is not for evaluating individual performance.
 - **Bias and Fairness**
   - Be aware of potential biases in data collection and analysis.
 
@@ -1059,7 +1129,6 @@ transition: fade-out
 # Context Matters
 
 ### Reasons for High Connectedness
-
 
 - Leader (influencer)
 - Glue work (connector)
@@ -1214,9 +1283,69 @@ Without context, interpretations are worthless. SNA is not a shortcut to underst
 transition: fade-out
 ---
 
-# Thank you!
+# Thank you to my network
 - @rmw - for helping me with this talk
 - GitHub Notifications and Chat Integrations teams for helping me explore these topics
+
+<div style="display: flex; justify-content: center;">
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Edges: Hub A (250,175) - 9 connections -->
+  <line x1="250" y1="175" x2="120" y2="80" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="380" y2="90" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="100" y2="200" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="400" y2="210" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="180" y2="290" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="330" y2="280" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="200" y2="50" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="310" y2="40" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <line x1="250" y1="175" x2="450" y2="150" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
+  <!-- Edges: Hub B (120,80) - 5 connections -->
+  <line x1="120" y1="80" x2="60" y2="40" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="120" y1="80" x2="50" y2="130" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="120" y1="80" x2="160" y2="20" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="120" y1="80" x2="100" y2="200" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="120" y1="80" x2="200" y2="50" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <!-- Edges: Hub C (380,90) - 4 connections -->
+  <line x1="380" y1="90" x2="430" y2="50" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="380" y1="90" x2="450" y2="150" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="380" y1="90" x2="310" y2="40" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="380" y1="90" x2="400" y2="210" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <!-- Edges: Hub D (180,290) - 4 connections -->
+  <line x1="180" y1="290" x2="110" y2="310" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="180" y1="290" x2="230" y2="330" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="180" y1="290" x2="100" y2="200" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <line x1="180" y1="290" x2="330" y2="280" stroke="#6366f1" stroke-width="1.2" opacity="0.4"/>
+  <!-- Edges: minor connections -->
+  <line x1="330" y1="280" x2="400" y2="300" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="330" y1="280" x2="400" y2="210" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="400" y1="210" x2="460" y2="260" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="100" y1="200" x2="40" y2="260" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <line x1="450" y1="150" x2="470" y2="100" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  <!-- Nodes: Hub (degree 9) -->
+  <circle cx="250" cy="175" r="12" fill="#7c3aed"/>
+  <!-- Nodes: Secondary hubs (degree 4-5) -->
+  <circle cx="120" cy="80" r="9" fill="#8b5cf6"/>
+  <circle cx="380" cy="90" r="8" fill="#8b5cf6"/>
+  <circle cx="180" cy="290" r="8" fill="#8b5cf6"/>
+  <circle cx="330" cy="280" r="7" fill="#a78bfa"/>
+  <circle cx="100" cy="200" r="7" fill="#a78bfa"/>
+  <circle cx="400" cy="210" r="7" fill="#a78bfa"/>
+  <circle cx="450" cy="150" r="6" fill="#a78bfa"/>
+  <!-- Nodes: Low-degree (degree 1-2) -->
+  <circle cx="200" cy="50" r="4" fill="#c4b5fd"/>
+  <circle cx="310" cy="40" r="4" fill="#c4b5fd"/>
+  <circle cx="60" cy="40" r="3.5" fill="#c4b5fd"/>
+  <circle cx="50" cy="130" r="3.5" fill="#c4b5fd"/>
+  <circle cx="160" cy="20" r="3.5" fill="#c4b5fd"/>
+  <circle cx="430" cy="50" r="3.5" fill="#c4b5fd"/>
+  <circle cx="110" cy="310" r="3.5" fill="#c4b5fd"/>
+  <circle cx="230" cy="330" r="3.5" fill="#c4b5fd"/>
+  <circle cx="400" cy="300" r="3.5" fill="#c4b5fd"/>
+  <circle cx="460" cy="260" r="3.5" fill="#c4b5fd"/>
+  <circle cx="40" cy="260" r="3.5" fill="#c4b5fd"/>
+  <circle cx="470" cy="100" r="3.5" fill="#c4b5fd"/>
+</svg>
+</div>
 
 ---
 transition: fade-out
