@@ -1184,14 +1184,10 @@ transition: fade-out
 
 </div>
 
-<!-- 
-Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
+<!--
 
-1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
-2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
-3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
 -->
- 
+
 ---
 transition: fade-out
 ---
@@ -1241,16 +1237,6 @@ transition: fade-out
 </svg>
 </div>
 
-
-<!-- 
-Low connectedness and isolation can have so many different interpretations and the tools we need to apply are rarely performance management.
-
-1. People are on vacation: this can be positive, having a person who is a central node go on a two-week vacation can give the space for new connections to form.
-2. People are working through something personal: as managers, if we see an isolated individual we should be curious first and see if we can support them 
-3. Other reasons include burnout, wrong fit, or lack of skills: noticing a person is isolated is only the first step, we still need our other tools like 1:1s, coaching to navigate difficult situations
--->
- 
-
 ---
 transition: fade-out
 ---
@@ -1259,25 +1245,17 @@ transition: fade-out
 
 Social Network Analysis clarifies a snapshot of interactions. It doesn't tell you why or what to do about it.
 
-- 1-1s: surface topics that can't be graphed
-- Retrospectives: help us decide what should happen
-- Coaching and Mentorship: requires interpersonal connection and trust
-
 <br>
 
 <img src="./images/notifications-team-network-graph.png" alt="Notifications Team Network Graph" style="width: 30em; max-width: 100%; max-height: 280px; object-fit: contain; display: block; margin: 0 auto;" />
 
 <!--
-- How do you deal with these complexities 
-1. Data is more available + AI tooling 
-2. Not enough insights from the data. 
+Social network analysis helped me see things that you suspected but didn't have a way to qualify. 
 
+But the graph has no idea why someone's been quiet for three weeks, or what it took for a junior engineer to finally speak up in a mob session. These insights from people to people connections. 
 
-Beyond the ethical concerns - 
-
-Without context, interpretations are worthless. SNA is not a shortcut to understanding your team.
+The network needs a manager.
 -->
-
 
 ---
 transition: fade-out
