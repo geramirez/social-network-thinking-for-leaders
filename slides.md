@@ -1284,8 +1284,9 @@ transition: fade-out
 ---
 
 # Thank you to my network
-- @rmw - for helping me with this talk
-- GitHub Notifications and Chat Integrations teams for helping me explore these topics
+- GitHub Notifications and Chat Integrations teams for being open to experiments and giving me the data to analyze
+- [Rebecca Miller-Webster](https://github.com/rmw/talks/blob/master/bios.md?plain=1) aka @rmw - for helping me improve this talk
+- My directors and mentors at GitHub [Dan Hodos](https://github.com/danhodos), [Aric Walker](https://github.com/aricwalker), and [Sebastian Bott](https://github.com/bottsepp) for encouraging me to try new experiments and tolerating my obsession with social network analysis. 
 
 <div style="display: flex; justify-content: center;">
 <svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
