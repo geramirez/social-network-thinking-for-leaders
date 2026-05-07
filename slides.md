@@ -1,26 +1,24 @@
 ---
-# try also 'default' to start simple
-theme: default
+theme: default  
+themeConfig:
+  primary: '#182e36'
 colorSchema: light
-# background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
 title: What Engineering Leaders Can Learn from Social Network Analysis
 info: |
   Presentation slides for What Engineering Leaders Can Learn from Social Network Analysis.
-
 class: text-center
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable Comark Syntax: https://comark.dev/syntax/markdown
+transition: fade-out
 comark: true
-# duration of the presentation
 duration: 20min
+slideNumber: true
+layout: cover
 ---
 
 # Social Network Analysis for Engineering Leaders
 
+**Gabriel Ramirez**
 
 ---
 transition: fade-out
@@ -58,14 +56,13 @@ transition: fade-out
 
 # Social Network Analysis 101
 
-<br>
 
 - A research method for studying social structures through the use of networks and graph theory
 - 1930s - during development of mass survey techniques and quantitative psychology
 - Evolved alongside computing technology: from manual mapping to computational analysis
 
 
-<img src="./images/pew-center-american-politics.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
+<img src="./images/pew-center-american-politics.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 25em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
 <!--
 - came about in 1930, during a time when we were starting to collect a lot of data on people.
@@ -294,7 +291,6 @@ graph TD
 
 
 ---
-theme: default
 transition: fade-out
 ---
 
@@ -302,24 +298,19 @@ transition: fade-out
 
 <br>
 
-
 - What causes nework connectivity to drop?
 - Do we have context silos?
 - Can individuals be too central to the network?
 
 <br>
 
-<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
+<img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 25em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
 
 
 
 
 ---
-theme: default
-drawings:
-  persist: false
-transition: slide-left
-comark: true
+transition: fade-out
 class: text-center
 ---
 
@@ -545,7 +536,7 @@ transition: fade-out
 
 # Mitigations: Question of the Day / Game Days
 
-- Allow for relationship building rather than just pushing people into a silo
+- Get people talking to each other
 
 <br>
 <svg viewBox="0 0 300 300" style="width: 18em; max-width: 100%; max-height: 280px; display: block; margin: 0 auto;">
@@ -894,7 +885,7 @@ transition: fade-out
 
 <br>
 <div style="display: flex; align-items: center; justify-content: center; gap: 1em;">
-  <img src="./images/central-senior.png" alt="Before: central senior engineer" style="width: 14em; max-height: 300px; object-fit: contain;" />
+  <img src="./images/central-senior.png" alt="Before: central senior engineer" style="width: 20em; max-height: 420px; object-fit: contain;" />
   <svg viewBox="0 0 80 40" style="width: 4em;">
     <defs>
       <marker id="resultarrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
@@ -903,7 +894,7 @@ transition: fade-out
     </defs>
     <line x1="5" y1="20" x2="65" y2="20" stroke="#4caf50" stroke-width="3" marker-end="url(#resultarrow)"/>
   </svg>
-  <img src="./images/seniors-and-juniors.png" alt="After: seniors and juniors connected" style="width: 14em; max-height: 300px; object-fit: contain;" />
+  <img src="./images/seniors-and-juniors.png" alt="After: seniors and juniors connected" style="width: 20em; max-height: 420px; object-fit: contain;" />
 </div>
 
 <!--
@@ -1157,7 +1148,7 @@ transition: fade-out
   <text x="100" y="192" text-anchor="middle" font-size="5" fill="#CBD5E1">Leader / Influencer</text>
 </svg>
 
-<svg viewBox="0 0 300 200" width="480" height="340" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 300 200" width="400" height="300" xmlns="http://www.w3.org/2000/svg">
   <!-- Left group -->
   <circle cx="60" cy="65" r="10" fill="#94A3B8" />
   <circle cx="40" cy="105" r="10" fill="#94A3B8" />
@@ -1268,7 +1259,7 @@ transition: fade-out
 - My directors and mentors at GitHub [Dan Hodos](https://github.com/danhodos), [Aric Walker](https://github.com/aricwalker), and [Sebastian Bott](https://github.com/bottsepp) for encouraging me to try new experiments and tolerating my obsession with social network analysis. 
 
 <div style="display: flex; justify-content: center;">
-<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+<svg width="400" height="300" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
   <!-- Edges: Hub A (250,175) - 9 connections -->
   <line x1="250" y1="175" x2="120" y2="80" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
   <line x1="250" y1="175" x2="380" y2="90" stroke="#6366f1" stroke-width="1.5" opacity="0.5"/>
@@ -1332,6 +1323,5 @@ transition: fade-out
 ---
 
 # Questions?
-<br>
 
-# - geramirez/gh-graph-explorer
+- [geramirez/gh-graph-explorer](https://github.com/geramirez/gh-graph-explorer)
