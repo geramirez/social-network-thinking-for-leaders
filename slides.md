@@ -1,6 +1,7 @@
 ---
 # try also 'default' to start simple
 theme: default
+colorSchema: light
 # background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: What Engineering Leaders Can Learn from Social Network Analysis
@@ -30,7 +31,7 @@ transition: fade-out
 - Sociologist and Anthropologist turned software engineering
 - Started my career as computational social scientist
 - 15 years of experience in technology software engineering and engineering leadership
-- Currently at GitHub 
+- Currently at GitHub, moving to Hydryx next month!
 
 <!--
 - I was stuyding sociology and anthropology in graduate school and roommate was a Computer Science PhD 
