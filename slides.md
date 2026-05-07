@@ -1017,6 +1017,13 @@ transition: fade-out
 
 <img src="./images/network-graph-for-my-people.png" alt="Image showing my team's network stats" style="width: 32em; max-width: 100%; max-height: 350px; object-fit: contain; display: block; margin: 0 auto;" />
 
+---
+transition: fade-out
+layout: cover
+
+---
+
+# Ethics and Limits
 
 ---
 transition: fade-out
