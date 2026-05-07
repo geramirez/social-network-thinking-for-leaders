@@ -26,7 +26,7 @@ transition: fade-out
 
 # About me
 
-- Sociologist and Anthropologist turned software engineering
+- Sociologist and Anthropologist turned Software Engineer
 - Started my career as computational social scientist
 - 15 years of experience in technology software engineering and engineering leadership
 - Currently at GitHub, moving to Hydryx next month!
@@ -39,6 +39,15 @@ transition: fade-out
 
 - this kicked of my intrests in tech, started as a computational social scienist and slowly transition to software engineering and engineering leadership.
 -->
+
+
+---
+transition: fade-out
+---
+- What is Social Network Analysis?
+- Methodology
+- Surfacing Team Painpoints and Mitigation Opportunities
+- Ethics and Limits of Social Network Analysis
 
 
 ---
@@ -298,8 +307,8 @@ transition: fade-out
 
 <br>
 
-- What causes nework connectivity to drop?
-- Do we have context silos?
+- What causes social connections to drop?
+- Can we detect context silos?
 - Can individuals be too central to the network?
 
 <br>
@@ -314,7 +323,7 @@ transition: fade-out
 class: text-center
 ---
 
-# How I applied Social Network Analysis
+# Methodology
 
 <img src="./images/pepe-silva.png" alt="It's Always Sunny in Philadelpha Pepe Silva Meme" style="width: 30em; max-width: 100%; max-height: 400px; object-fit: contain; display: block; margin: 0 auto;" />
 
@@ -425,13 +434,13 @@ what you see is a rich story over time
 transition: fade-out
 ---
 
-# Practical Team Management Insights
+# Surfacing Team Painpoints and Mitigation Opportunities
 
 <br>
 
 1. Team On and Offboardings
 2. Cliques and Silos
-3. The Seniority Bottleneck
+3. Seniority Bottlenecks
 4. Manager Bottlenecks
 
 
@@ -796,7 +805,7 @@ transition: fade-out
 transition: fade-out
 ---
 
-# The Seniority Bottleneck
+# Seniority Bottlenecks
 
 <br>
 <img src="./images/central-senior.png" alt="A central senior engineer" style="width: 30em; max-width: 100%; max-height: 380px; object-fit: contain; display: block; margin: 0 auto;" />
