@@ -50,7 +50,7 @@ transition: fade-out
 - What is Social Network Analysis?
 - Methodology
 - Surfacing Team Painpoints and Mitigation Opportunities
-- Ethics and Limits of Social Network Analysis
+- AI, Ethics, and Limits of Social Network Analysis
 
 
 ---
